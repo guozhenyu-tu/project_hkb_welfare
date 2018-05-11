@@ -1,0 +1,653 @@
+.confirm_order_all{
+
+  .confirm_detail{
+
+    padding: 10px 0;
+
+    box-shadow: 0 2px 3px #e9e9e9;
+
+    background-color: #ffffff;
+
+    .tittle{
+
+      font-size: 16px;
+
+      margin: 0 2.5% 0 2.5%;
+
+      padding: 0 2.5% 6px 5%;
+
+      position: relative;
+
+      border-bottom: 1px solid #e5e5e5;
+
+      &:after{
+
+        position: absolute;
+
+        content: '';
+
+        left: 2px;
+
+        top: 4px;
+
+        width: 4px;
+
+        height: 17px;
+
+        border-radius: 10px;
+
+        background: #ff8000;
+
+      }
+
+    }
+
+    .purchase_line{
+
+      width: 90%;
+
+      padding: 15px 5%;
+
+      display: flex;
+
+      justify-content: flex-start;
+
+      color: #4a4a4a;
+
+      &:last-child{
+
+        margin-bottom: 0px;
+
+      }
+
+      img{
+
+        width: 80px;
+
+        height: 80px;
+
+
+      }
+
+      .right_mod{
+
+        width: calc(100vw);
+
+        margin-left: 5%;
+
+        display: flex;
+
+        flex-direction: column;
+
+        justify-content: space-around;
+
+        align-items: flex-start;
+
+        white-space: nowrap;
+
+        div{
+
+          width: 95%;
+
+          display: flex;
+
+          justify-content: space-between;
+
+          .many_num{
+
+            font-size: 16px;
+
+          }
+
+        }
+
+      }
+
+
+    }
+
+    .pay_money{
+
+      padding: 10px 2.5% 5px 2.5%;
+
+      margin: 0 2.5% 0 2.5%;
+
+      border-top: 1px solid #dddddd;
+
+      display: flex;
+
+      justify-content: space-between;
+
+      font-size: 16px;
+
+      p:last-child{
+
+        font-weight: bold;
+
+      }
+
+    }
+
+  }
+
+  .pay_detail{
+
+    padding: 10px 0;
+
+    margin-top: 20px;
+
+    box-shadow: 0 2px 3px #e9e9e9;
+
+    background-color: #ffffff;
+
+    .tittle{
+
+      font-size: 16px;
+
+      margin: 0 2.5% 0 2.5%;
+
+      padding: 0 2.5% 6px 5%;
+
+      position: relative;
+
+      border-bottom: 1px solid #e5e5e5;
+
+      &:after{
+
+        position: absolute;
+
+        content: '';
+
+        left: 2px;
+
+        top: 4px;
+
+        width: 4px;
+
+        height: 17px;
+
+        border-radius: 10px;
+
+        background: #ff8000;
+
+      }
+
+    }
+
+    .choose_line{
+
+      width: 90%;
+
+      display: flex;
+
+      justify-content:space-between;
+
+      align-items: center;
+
+      margin: 0 2.5% 0 2.5%;
+
+      padding: 14px 2.5% 14px 2.5%;
+
+      position: relative;
+
+      &:after {
+
+        content: '';
+
+        position: absolute;
+
+        left: 0;
+
+        bottom: 0;
+
+        width: 100%;
+
+        border-bottom: solid 1px #e5e5e5;
+
+        transform: scaleY(0.4);
+
+      }
+
+      &:last-child:after{
+
+        border-bottom: none;
+
+      }
+
+      .choose_icon{
+
+        display: flex;
+
+        justify-content: center;
+
+        align-items: center;
+
+        img{
+
+          width: 24px;
+
+          height: 24px;
+
+          margin-right: 10px;
+
+        }
+
+      }
+
+    }
+
+
+  }
+
+}
+
+.bottom_box{
+
+  position: fixed;
+
+  bottom: 0;
+
+  left: 0;
+
+  width: 95%;
+
+  margin: 5px 2.5%;
+
+  background: #ff8000;
+
+  border-radius: 30px;
+
+  a{
+
+    display: block;
+
+    width: 100%;
+
+    text-align: center;
+
+    line-height: 50px;
+
+    color: #fff;
+
+    height: 50px;
+
+    font-size: 16px;
+
+  }
+
+}
+
+
+/**单选**/
+
+.regular-radio {
+  display: none;
+}
+
+.regular-radio + label {
+  -webkit-appearance: none;
+  background-color: #fff;
+  border: 1px solid #ff8000;
+  padding: 9px;
+  border-radius:50px;
+  display: inline-block;
+  position: relative;
+}
+
+.regular-radio:checked + label:after {
+  content: ' ';
+  width: 12px;
+  height: 12px;
+  border-radius: 50px;
+  position: absolute;
+  top: 3px;
+  background:#ff8000;
+  box-shadow:0px 0px 5px 0px #ff8000;
+  left: 3px;
+}
+
+
+
+
+/*****成功支付“pay_succsee.ejs”*****/
+
+
+.shop_pay_gather {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  .shop_pay_success {
+
+    width: 100%;
+
+    /*打钩*/
+    .payment_animation_right {
+      padding: 60px 0 20px 0;
+
+      .swal2-icon {
+        padding: 0;
+        position: relative;
+        width: 80px;
+        height: 80px;
+        border: 4px solid grey;
+        border-radius: 50%;
+        margin: 10px auto 15px;
+        box-sizing: content-box;
+        cursor: default;
+        user-select: none;
+        .tip {
+          width: 25px;
+          left: 14px;
+          top: 46px;
+          transform: rotate(45deg)
+        }
+        .line {
+          height: 5px;
+          background-color: #ff8000;
+          display: block;
+          border-radius: 2px;
+          position: absolute;
+          z-index: 2
+        }
+        .animate-success-tip {
+          animation: animate-success-tip .75s;
+          @keyframes animate-success-tip {
+            0%, 54% {
+              width: 0;
+              left: 1px;
+              top: 19px
+            }
+
+            70% {
+              width: 50px;
+              left: -8px;
+              top: 37px
+            }
+            84% {
+              width: 17px;
+              left: 21px;
+              top: 48px
+            }
+            100% {
+              width: 25px;
+              left: 14px;
+              top: 45px
+            }
+          }
+        }
+        .animate-success-long {
+          animation: animate-success-long .75s;
+          @keyframes animate-success-long {
+            0%, 65% {
+              width: 0;
+              right: 46px;
+              top: 54px
+            }
+
+            84% {
+              width: 55px;
+              right: 0;
+              top: 35px
+            }
+            100% {
+              width: 47px;
+              right: 8px;
+              top: 38px
+            }
+          }
+        }
+        .long {
+          width: 47px;
+          right: 8px;
+          top: 38px;
+          transform: rotate(-45deg)
+        }
+        .placeholder {
+          width: 80px;
+          height: 80px;
+          border: 4px solid rgba(255, 128, 0, .2);
+          border-radius: 50%;
+          box-sizing: content-box;
+          position: absolute;
+          left: -4px;
+          top: -4px;
+          z-index: 2
+        }
+        .fix {
+          width: 7px;
+          height: 90px;
+          background-color: #fff;
+          position: absolute;
+          left: 28px;
+          top: 8px;
+          z-index: 1;
+          transform: rotate(-45deg)
+        }
+        &.swal2-success {
+          border-color: #ff8000;
+          &::after, &::before {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 120px;
+            background: #fff;
+          }
+          &::before {
+            border-radius: 120px 0 0 120px;
+            top: -7px;
+            left: -33px;
+            transform: rotate(-45deg);
+            transform-origin: 60px 60px
+          }
+          &::after {
+            border-radius: 0 120px 120px 0;
+            top: -11px;
+            left: 30px;
+            transform: rotate(-45deg);
+            transform-origin: 0 60px
+          }
+        }
+        &.animate::after {
+          animation: rotatePlaceholder 4.25s ease-in;
+          @keyframes rotatePlaceholder {
+
+            0%,
+            5% {
+              transform: rotate(-45deg)
+            }
+
+            100%,
+            12% {
+              transform: rotate(-405deg)
+            }
+          }
+        }
+      }
+
+    }
+
+    /*打叉*/
+    .payment_animation_wrong {
+       padding: 60px 0 20px 0;
+       background-color: #fff;
+       .swal2-icon {
+         padding: 0;
+         position: relative;
+         width: 80px;
+         height: 80px;
+         border: 4px solid grey;
+         border-radius: 50%;
+         margin: 20px auto 30px;
+         box-sizing: content-box;
+         cursor: default;
+         -webkit-touch-callout: none;
+         -webkit-user-select: none;
+         -moz-user-select: none;
+         -ms-user-select: none;
+         user-select: none;
+         .x-mark {
+           position: relative;
+           display: block
+         }
+         .animate-x-mark {
+           animation: animate-x-mark .5s;
+           @keyframes animate-x-mark {
+
+             0%,
+             50% {
+               -webkit-transform: scale(.4);
+               transform: scale(.4);
+               margin-top: 26px;
+               opacity: 0
+             }
+
+             80% {
+               -webkit-transform: scale(1 .15
+               );
+               transform: scale(1 .15
+               );
+               margin-top: -6px
+             }
+             100% {
+               -webkit-transform: scale(1);
+               transform: scale(1);
+               margin-top: 0;
+               opacity: 1
+             }
+           }
+         }
+         .left {
+           -webkit-transform: rotate(45deg);
+           transform: rotate(45deg);
+           left: 17px
+         }
+         .line {
+           position: absolute;
+           height: 5px;
+           width: 47px;
+           background-color: #f27474;
+           display: block;
+           top: 37px;
+           border-radius: 2px
+         }
+         .right {
+           -webkit-transform: rotate(-45deg);
+           transform: rotate(-45deg);
+           right: 16px
+         }
+         &.swal2-error {
+           border-color: #f27474;
+         }
+         &.animate-error-icon {
+           animation: animate-error-icon .5s;
+           @keyframes animate-error-icon {
+
+             0% {
+               -webkit-transform: rotateX(100deg);
+               transform: rotateX(100deg);
+               opacity: 0
+             }
+
+             100% {
+               -webkit-transform: rotateX(0);
+               transform: rotateX(0);
+               opacity: 1
+             }
+           }
+         }
+       }
+     }
+
+    /*金额*/
+    .payment_detail {
+
+      .operation_prompt {
+        text-align: center;
+
+        p{
+          font-size: 14px;
+          color: #4A4A4A;
+
+        }
+
+        p:first-child{
+
+          font-size: 16px;
+          margin-bottom: 4px;
+
+        }
+       }
+
+      }
+
+    }
+
+    /*按钮*/
+    .payment_operation {
+      padding-top: 80px;
+
+      .hkb_pay_btn_area {
+
+        .pay_success_btn {
+          display: flex;
+          justify-content: center;
+          margin: 0 auto;
+          width: 92%;
+          padding: 0 4%;
+          height: 45px;
+          line-height: 45px;
+          box-sizing: border-box;
+          text-align: center;
+          text-decoration: none;
+          border-radius: 50px;
+          overflow: hidden;
+          background-color: #ff8000;
+          font-size: 16px;
+          color: white;
+
+        }
+
+        &:active {
+          opacity: .8;
+        }
+
+      }
+
+      .hkb_pay_distance{
+        margin-top: 20px;
+
+        .pay_success_btn {
+
+          margin: 0 auto;
+          display: flex;
+          justify-content: center;
+          width: 92%;
+          padding: 0 4%;
+          height: 45px;
+          line-height: 45px;
+          box-sizing: border-box;
+          text-align: center;
+          text-decoration: none;
+          border-radius: 50px;
+          overflow: hidden;
+          border: 1px solid #ff8000;
+          font-size: 16px;
+          color: #ff8000;
+
+
+          &:active {
+
+            opacity: .8;
+          }
+
+        }
+
+      }
+
+    }
+
+
+
+  }
+
+
