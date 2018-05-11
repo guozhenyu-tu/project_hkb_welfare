@@ -1,0 +1,91 @@
+/*嘉福微信主要全局样式*/
+
+html {
+  font-size: 20px;
+}
+
+@media only screen and (min-width: 401px) {
+  html {
+    font-size: 25px !important;
+  }
+}
+
+@media only screen and (min-width: 428px) {
+  html {
+    font-size: 26.75px !important;
+  }
+}
+
+@media only screen and (min-width: 481px) {
+  html {
+    font-size: 30px !important;
+  }
+}
+
+@media only screen and (min-width: 569px) {
+  html {
+    font-size: 35px !important;
+  }
+}
+
+@media only screen and (min-width: 641px) {
+  html {
+    font-size: 40px !important;
+  }
+}
+
+html, body {
+  position: relative;
+  height: 100%;
+  -moz-user-select: none; /*火狐*/
+  -webkit-user-select: none; /*webkit浏览器*/
+  -ms-user-select: none; /*IE10*/
+  -khtml-user-select: none; /*早期浏览器*/
+  user-select: none;
+}
+
+body {
+  background: #f5f5f9;
+  font-family: Arial, '微软雅黑', Helvetica Neue, Helvetica, sans-serif;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  color: #4a4a4a;
+  -webkit-overflow-scrolling: touch;
+  line-height: 1.6;
+}
+
+.selectAllText {
+  -moz-user-select: all;
+  -webkit-user-select: all;
+  -ms-user-select: all;
+  -khtml-user-select: all;
+  user-select: all
+}
+
+.ovfHiden {
+  overflow: hidden;
+  height: 100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(255,255,255,0);
+}
+* {
+  -webkit-tap-highlight-color: rgba(255,255,255,0);
+}
+
+/*嘉福微信主要全局样式结束*/
+/*input去除它的自带样式*/
+input,textarea{
+  border: 0;
+  outline: 0;
+  -webkit-appearance:none;
+  -webkit-tap-highlight-color: transparent;
+  font-size: inherit;
+  color: inherit;
+}
