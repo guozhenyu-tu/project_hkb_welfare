@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>额度转卖</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,minimum-scale=1, maximum-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no, email=no">
+<link rel="stylesheet" href="../../css/hkb_welfare.min.css">
+</head>
+<body>
+
+
+<!--汇卡宝-额度转卖-->
+
+<div class="resell_all">
+
+
+
+    <div class="resell_tips">
+
+        <span>通知模块</span>
+
+    </div>
+
+    <div class="sell_money">
+
+        <div class="sell_line">
+
+            <p>转卖面额：<span>100</span>元</p>
+
+            <p>最大可转卖张数：<span>10</span></p>
+
+        </div>
+
+        <div class="sell_line">
+
+            <p>可转卖额度：<span>1000</span>元</p>
+
+            <p>平台服务费：<span>10</span>%</p>
+
+        </div>
+
+        <div class="sell_line">
+
+            <p>转卖张数</p>
+
+            <input type="tel" pattern="[0-9*]" placeholder="不可大于10">
+
+        </div>
+
+        <div class="sell_line">
+
+            <p>转卖额度</p>
+
+            <p><span>10</span>元</p>
+
+        </div>
+
+        <div class="markey_buy_price">
+
+            <div class="sale_price">卖出单价(元)
+
+                <img src="../../images/market_icon_helpcenter.png">
+
+            </div>
+
+            <div class="price_num">
+                <span class="reduce">—</span>
+                <div class="show_price">
+                    <input value="0.998" class="inputele" type="number" maxlength="5" max-price="0.998">
+                </div>
+                <span class="add">+</span>
+
+            </div>
+        </div>
+
+
+        <div class="sell_line">
+
+            <p class="get_cash">变卖收入(元)
+
+                <img src="../../images/market_icon_helpcenter.png">
+
+            </p>
+
+            <p>平台服务费：<span>1000</span>元</p>
+
+        </div>
+
+    </div>
+
+    <div class="market_buy_agreement">
+    <label>
+         <input type="checkbox" class="agreement_check" checked>
+        已经阅读并同意<a href="#">《转卖服务协议》</a>
+    </label>
+    </div>
+
+
+    <div class="bottom_btn_fx">
+
+        <a href="#" class="btn_fx">转卖</a>
+
+
+    </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<script src="../js/fastclick.min.js"></script>
+<script src="../js/hkb_welfare.min.js"></script>
+<script src="../../js/hkb_welfare.min.js"></script>
+<script>
+
+
+    /*单价说明*/
+    document.getElementsByClassName('sale_price')[0].addEventListener('click',function(){
+
+        jfShowTips.dialogShow({
+            "mainText": "卖出单价",
+            "minText": "卖出单价文案",
+            "noCheck": false,
+            "noCancel": true,
+            "checkBtnText":"知道了",
+            "checkFn": function () {
+                jfShowTips.dialogRemove()
+            }
+        });
+
+    },false)
+
+
+
+
+
+    /*总价说明*/
+    document.getElementsByClassName('get_cash')[0].addEventListener('click',function(){
+
+        jfShowTips.dialogShow({
+            "mainText": "变卖收入",
+            "minText": "变卖收入文案",
+            "noCheck": false,
+            "noCancel": true,
+            "checkBtnText":"知道了",
+            "checkFn": function () {
+                jfShowTips.dialogRemove()
+            }
+        });
+
+    },false)
+
+
+
+
+
+</script>
+</body>
+</html>
