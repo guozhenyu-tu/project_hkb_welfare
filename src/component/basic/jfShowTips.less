@@ -1,0 +1,307 @@
+/*嘉福平台通用UI*/
+a {
+  -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+}
+#tip_toast {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: calc(8vh);
+  z-index: 1000;
+  opacity: 0;
+  -webkit-animation: opacity_change 2s linear both;
+  animation: opacity_change 2s linear both;
+}
+#tip_toast.tip_input {
+  bottom: calc(55vh);
+}
+#tip_toast span {
+  font-size: 16px;
+  color: white;
+  display: inline-block;
+  padding: 5px 10px;
+  text-align: center;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+  max-width: calc(65vw);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+@-webkit-keyframes opacity_change {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes opacity_change {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+#tip_loading {
+  background-color: white;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  width: 30%;
+  height: 25%;
+  width: calc(36vw);
+  height: calc(36vw);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 10px;
+  -webkit-animation: showLoading 10s both;
+  animation: showLoading 10s both;
+  opacity: 1;
+  z-index: 1000;
+}
+@-webkit-keyframes showLoading {
+  0% {
+    -webkit-transform: scale3d(0.3, 0.3, 1);
+    transform: scale3d(0.3, 0.3, 1);
+    opacity: 0;
+  }
+  5% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    opacity: 1;
+  }
+  90% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes showLoading {
+  0% {
+    -webkit-transform: scale3d(0.3, 0.3, 1);
+    transform: scale3d(0.3, 0.3, 1);
+    opacity: 0;
+  }
+  5% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    opacity: 1;
+  }
+  90% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+#tip_loading .spinner {
+  margin: 15% auto 10%;
+  width: 50px;
+  height: 60px;
+  text-align: center;
+  font-size: 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+#tip_loading .spinner div {
+  background-color: #ff8000;
+  height: 100%;
+  width: 6px;
+  border-radius: 15px;
+  display: block;
+  -webkit-animation: stretchdelay 1.2s infinite ease-in-out;
+  animation: stretchdelay 1.2s infinite ease-in-out;
+}
+#tip_loading .spinner .rect1 {
+  -webkit-animation-delay: -1.2s;
+  animation-delay: -1.2s;
+}
+#tip_loading .spinner .rect2 {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+#tip_loading .spinner .rect3 {
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s;
+}
+#tip_loading .spinner .rect4 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+#tip_loading .spinner .rect5 {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+@-webkit-keyframes stretchdelay {
+  0%,
+  40%,
+  100% {
+    -webkit-transform: scaleY(0.4);
+  }
+  20% {
+    -webkit-transform: scaleY(1);
+  }
+}
+@keyframes stretchdelay {
+  0%,
+  40%,
+  100% {
+    -webkit-transform: scaleY(0.4);
+    transform: scaleY(0.4);
+  }
+  20% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+  }
+}
+#tip_loading i {
+  color: black;
+  font-family: 'arial Narrow', 'arial', '微软雅黑';
+  font-size: 14px;
+  height: 20px;
+  display: block;
+  font-style: normal;
+  text-align: center;
+  width: 100%;
+}
+.tip_bg {
+  position: fixed;
+  left: -100%;
+  top: -100%;
+  width: 300%;
+  height: 300%;
+  background: black;
+  opacity: .5;
+  z-index: 1000;
+  -webkit-animation: opacity_bg_change .5s;
+  animation: opacity_bg_change .5s;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+}
+@-webkit-keyframes opacity_bg_change {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: .5;
+  }
+}
+@keyframes opacity_bg_change {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: .5;
+  }
+}
+
+#tip_dialog .text_dialog_container {
+  width: 80%;
+  width: calc(80vw);
+  position: fixed;
+  z-index: 1001;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  background-color: white;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-animation: showDialog .5s both;
+  animation: showDialog .5s both;
+}
+@-webkit-keyframes showDialog {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes showDialog {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#tip_dialog .text_dialog_container .text_big {
+  color: #4a4a4a;
+  font-size: 24px;
+  text-align: center;
+  margin: 20px auto 10px;
+  width: 90%;
+}
+#tip_dialog .text_dialog_container .text_small {
+  font-size: 14px;
+  margin: 10px auto;
+  width: 80%;
+  color: #ababab;
+}
+#tip_dialog .text_dialog_container .dialog_button {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  border-radius: 0 0 10px 10px;
+  overflow: hidden;
+
+}
+#tip_dialog .text_dialog_container .dialog_button a {
+  width: 50%;
+  flex: 1;
+  text-decoration: none;
+  text-align: center;
+  font-size: 16px;
+  padding: 10px 0;
+  margin-top: 20px;
+  display: block;
+}
+#tip_dialog .text_dialog_container .dialog_button a:active {
+  opacity: .6;
+}
+#tip_dialog .text_dialog_container .dialog_button a.dialog_check {
+  background-color: #ff8a16;
+  color: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+#tip_dialog .text_dialog_container .dialog_button a.dialog_cancel {
+  background-color: white;
+  color: #ff8a16;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/*嘉福平台通用UI样式结束*/
