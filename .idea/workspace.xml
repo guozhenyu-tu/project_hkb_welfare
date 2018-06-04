@@ -13,94 +13,24 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5279008">
+    <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="resell.ejs" pinned="false" current-in-tab="false">
+          <file leaf-file-name="resell.ejs" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/component/resell/resell.ejs">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1044">
-                  <caret line="87" column="18" lean-forward="false" selection-start-line="87" selection-start-column="18" selection-end-line="87" selection-end-column="18" />
+                <state relative-caret-position="507">
+                  <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="in_fail.ejs" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/component/card_in/in_fail.ejs">
+          <file leaf-file-name="resell.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/component/resell/resell.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="420">
-                  <caret line="35" column="17" lean-forward="false" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="card_bag.ejs" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/component/card_show/card_bag.ejs">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="540">
-                  <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="card_in.ejs" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/component/card_in/card_in.ejs">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="420">
-                  <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="card_success.ejs" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/component/card_in/card_success.ejs">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="384">
-                  <caret line="32" column="14" lean-forward="false" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="homepage.ejs" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/component/homepage/homepage.ejs">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="792">
-                  <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="purchase_list.ejs" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/view/purchase_list/purchase_list.ejs">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="72">
-                  <caret line="6" column="6" lean-forward="false" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="confirm_order.ejs" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/component/card_show/confirm_order.ejs">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="720">
-                  <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="pay_success.ejs" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/component/card_show/pay_success.ejs">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="300">
-                  <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+                <state relative-caret-position="612">
+                  <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -110,71 +40,51 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="resell.less" pinned="false" current-in-tab="false">
+          <file leaf-file-name="resell.less" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/component/resell/resell.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="2760">
-                  <caret line="230" column="0" lean-forward="false" selection-start-line="230" selection-start-column="0" selection-end-line="230" selection-end-column="0" />
+                <state relative-caret-position="353">
+                  <caret line="399" column="13" lean-forward="false" selection-start-line="399" selection-start-column="13" selection-end-line="399" selection-end-column="13" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="purchase_list.less" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/component/purchase_list/purchase_list.less">
+          <file leaf-file-name="add_vip.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/build/html/vip/add_vip.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="552">
-                  <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="card_show.less" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/component/card_show/card_show.less">
+          <file leaf-file-name="vip.ejs" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/component/vip/vip.ejs">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="912">
-                  <caret line="76" column="25" lean-forward="false" selection-start-line="76" selection-start-column="25" selection-end-line="76" selection-end-column="25" />
+                <state relative-caret-position="468">
+                  <caret line="39" column="36" lean-forward="false" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="card_bag.less" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/component/card_show/card_bag.less">
+          <file leaf-file-name="add_vip.ejs" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/view/vip/add_vip.ejs">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="3000">
-                  <caret line="250" column="0" lean-forward="false" selection-start-line="250" selection-start-column="0" selection-end-line="250" selection-end-column="0" />
+                <state relative-caret-position="156">
+                  <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="homepage.less" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/component/homepage/homepage.less">
+          <file leaf-file-name="resell.ejs" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/view/resell/resell.ejs">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="564">
-                  <caret line="47" column="25" lean-forward="false" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="hkb_welfare.css" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/build/css/hkb_welfare.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="12">
-                  <caret line="22" column="3" lean-forward="false" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="confirm_order.less" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/component/card_show/confirm_order.less">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="3036">
-                  <caret line="253" column="20" lean-forward="false" selection-start-line="253" selection-start-column="20" selection-end-line="253" selection-end-column="20" />
+                <state relative-caret-position="156">
+                  <caret line="13" column="70" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="70" />
                   <folding />
                 </state>
               </provider>
@@ -197,10 +107,30 @@
       <find>payment_operation</find>
       <find>&lt;a&gt;</find>
       <find>sale_all</find>
+      <find>payment_animation_wrong</find>
+      <find>agreement</find>
+      <find>14px</find>
+      <find>payment_detail</find>
+      <find>28</find>
+      <find>sku_contain</find>
+      <find>add</find>
+      <find>inf_tittle</find>
+      <find>em</find>
+      <find>box_change</find>
+      <find>weui_title</find>
+      <find>.vipMain</find>
+      <find>30%</find>
+      <find>bankDragUp.stop</find>
+      <find>right_code_box</find>
+      <find>left_code</find>
     </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
     <dirStrings>
-      <dir>D:\文件\project_hkb_welfare\src\component</dir>
       <dir>D:\文件\project_hkb_welfare\src\component\card_in</dir>
+      <dir>D:\文件\project_hkb_welfare\src\component</dir>
+      <dir>D:\文件\project_hkb_welfare\src\component\card_show</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -209,26 +139,14 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/gulp/dev/js.dev.js" />
-        <option value="$PROJECT_DIR$/gulp/dev/less.dev.js" />
-        <option value="$PROJECT_DIR$/src/component/purchase.ejs" />
-        <option value="$PROJECT_DIR$/src/component/purchase_list.ejs" />
-        <option value="$PROJECT_DIR$/src/component/purchase_list.less" />
-        <option value="$PROJECT_DIR$/src/view/purchase_list.ejs" />
-        <option value="$PROJECT_DIR$/src/view/purchase_list/purchase.ejs" />
         <option value="$PROJECT_DIR$/src/view/homepage.ejs" />
         <option value="$PROJECT_DIR$/src/view/purchase_list/purchase_list.ejs" />
         <option value="$PROJECT_DIR$/build/html/homepage.html" />
-        <option value="$PROJECT_DIR$/gulp/dev/ejs.dev.js" />
-        <option value="$PROJECT_DIR$/src/view/card_show/card_show.ejs" />
         <option value="$PROJECT_DIR$/src/view/card_show/confirm_order.ejs" />
         <option value="$PROJECT_DIR$/src/view/card_show/pay_success.ejs" />
         <option value="$PROJECT_DIR$/src/component/card_show/card_bag.js" />
         <option value="$PROJECT_DIR$/src/view/card_show/card_bag.ejs" />
         <option value="$PROJECT_DIR$/src/view/detail_list/detail_list.ejs" />
-        <option value="$PROJECT_DIR$/src/component/detail_list/detail_list.less" />
-        <option value="$PROJECT_DIR$/src/component/purchase_list/purchase_list.less" />
-        <option value="$PROJECT_DIR$/src/component/card_show/card_show.less" />
         <option value="$PROJECT_DIR$/src/component/card_in/card_in.less" />
         <option value="$PROJECT_DIR$/src/view/card_in/card_success.ejs" />
         <option value="$PROJECT_DIR$/src/view/card_in/card_fail.ejs" />
@@ -236,30 +154,42 @@
         <option value="$PROJECT_DIR$/src/view/resell/resell_success.ejs" />
         <option value="$PROJECT_DIR$/src/view/resell/resell.ejs" />
         <option value="$PROJECT_DIR$/build/js/hkb_welfare.js" />
-        <option value="$PROJECT_DIR$/gulp/config.js" />
-        <option value="$PROJECT_DIR$/src/component/resell/resell.js" />
-        <option value="$PROJECT_DIR$/src/component/basic/jfShowTips.less" />
         <option value="$PROJECT_DIR$/src/component/card_in/card_fail.ejs" />
         <option value="$PROJECT_DIR$/src/component/resell/resell_success.ejs" />
-        <option value="$PROJECT_DIR$/src/component/detail_list/detail_list.ejs" />
-        <option value="$PROJECT_DIR$/src/component/card_show/card_bag.less" />
-        <option value="$PROJECT_DIR$/src/component/resell/resell.less" />
-        <option value="$PROJECT_DIR$/src/component/purchase_list/purchase_list.ejs" />
-        <option value="$PROJECT_DIR$/src/component/card_show/card_show.ejs" />
         <option value="$PROJECT_DIR$/src/component/card_show/confirm_order.ejs" />
         <option value="$PROJECT_DIR$/src/view/card_in/card_in.ejs" />
         <option value="$PROJECT_DIR$/src/component/card_in/card_in.ejs" />
-        <option value="$PROJECT_DIR$/src/component/card_show/card_bag.ejs" />
         <option value="$PROJECT_DIR$/src/component/homepage.ejs" />
         <option value="$PROJECT_DIR$/src/component/card_show/confirm_order.less" />
-        <option value="$PROJECT_DIR$/src/component/resell/resell.ejs" />
         <option value="$PROJECT_DIR$/src/component/card_in/in_fail.ejs" />
         <option value="$PROJECT_DIR$/src/component/homepage.less" />
-        <option value="$PROJECT_DIR$/build/css/hkb_welfare.css" />
         <option value="$PROJECT_DIR$/src/view/homepage/homepage.ejs" />
-        <option value="$PROJECT_DIR$/src/component/homepage/homepage.ejs" />
         <option value="$PROJECT_DIR$/src/component/card_in/card_success.ejs" />
+        <option value="$PROJECT_DIR$/build/css/hkb_welfare.css" />
+        <option value="$PROJECT_DIR$/src/component/purchase_list/purchase_list.ejs" />
+        <option value="$PROJECT_DIR$/src/component/purchase_list/purchase_list.less" />
+        <option value="$PROJECT_DIR$/src/view/card_show/card_show.ejs" />
         <option value="$PROJECT_DIR$/src/component/card_show/pay_success.ejs" />
+        <option value="$PROJECT_DIR$/src/component/card_show/card_bag.ejs" />
+        <option value="$PROJECT_DIR$/gulp/config.js" />
+        <option value="$PROJECT_DIR$/src/component/detail_list/detail_list.less" />
+        <option value="$PROJECT_DIR$/src/component/detail_list/detail_list.ejs" />
+        <option value="$PROJECT_DIR$/src/component/card_show/card_show.js" />
+        <option value="$PROJECT_DIR$/src/component/basic/jfShowTips.less" />
+        <option value="$PROJECT_DIR$/gulp/dev/ejs.dev.js" />
+        <option value="$PROJECT_DIR$/src/view/vip/vip.ejs" />
+        <option value="$PROJECT_DIR$/src/component/vip/vip.less" />
+        <option value="$PROJECT_DIR$/src/component/card_show/card_bag.less" />
+        <option value="$PROJECT_DIR$/src/component/homepage/homepage.ejs" />
+        <option value="$PROJECT_DIR$/src/component/homepage/homepage.less" />
+        <option value="$PROJECT_DIR$/src/component/card_show/card_show.ejs" />
+        <option value="$PROJECT_DIR$/src/component/card_show/card_show.less" />
+        <option value="$PROJECT_DIR$/build/html/homepage/homepage.html" />
+        <option value="$PROJECT_DIR$/src/component/resell/resell.js" />
+        <option value="$PROJECT_DIR$/src/view/vip/add_vip.ejs" />
+        <option value="$PROJECT_DIR$/src/component/resell/resell.ejs" />
+        <option value="$PROJECT_DIR$/src/component/vip/vip.ejs" />
+        <option value="$PROJECT_DIR$/src/component/resell/resell.less" />
       </list>
     </option>
   </component>
@@ -333,7 +263,7 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
@@ -354,8 +284,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -372,24 +302,28 @@
               <item name="project_hkb_welfare" type="b2602c69:ProjectViewProjectNode" />
               <item name="project_hkb_welfare" type="462c0819:PsiDirectoryNode" />
               <item name="build" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project_hkb_welfare" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project_hkb_welfare" type="462c0819:PsiDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
               <item name="html" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="project_hkb_welfare" type="b2602c69:ProjectViewProjectNode" />
               <item name="project_hkb_welfare" type="462c0819:PsiDirectoryNode" />
               <item name="build" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="html" type="462c0819:PsiDirectoryNode" />
+              <item name="homepage" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="project_hkb_welfare" type="b2602c69:ProjectViewProjectNode" />
               <item name="project_hkb_welfare" type="462c0819:PsiDirectoryNode" />
-              <item name="gulp" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="html" type="462c0819:PsiDirectoryNode" />
+              <item name="resell" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project_hkb_welfare" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project_hkb_welfare" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="html" type="462c0819:PsiDirectoryNode" />
+              <item name="vip" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="project_hkb_welfare" type="b2602c69:ProjectViewProjectNode" />
@@ -421,6 +355,13 @@
               <item name="project_hkb_welfare" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="component" type="462c0819:PsiDirectoryNode" />
+              <item name="detail_list" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project_hkb_welfare" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project_hkb_welfare" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="component" type="462c0819:PsiDirectoryNode" />
               <item name="homepage" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -428,14 +369,26 @@
               <item name="project_hkb_welfare" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="component" type="462c0819:PsiDirectoryNode" />
-              <item name="purchase_list" type="462c0819:PsiDirectoryNode" />
+              <item name="resell" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="project_hkb_welfare" type="b2602c69:ProjectViewProjectNode" />
               <item name="project_hkb_welfare" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="component" type="462c0819:PsiDirectoryNode" />
-              <item name="resell" type="462c0819:PsiDirectoryNode" />
+              <item name="vip" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project_hkb_welfare" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project_hkb_welfare" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project_hkb_welfare" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project_hkb_welfare" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="project_hkb_welfare" type="b2602c69:ProjectViewProjectNode" />
@@ -476,14 +429,14 @@
               <item name="project_hkb_welfare" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="purchase_list" type="462c0819:PsiDirectoryNode" />
+              <item name="resell" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="project_hkb_welfare" type="b2602c69:ProjectViewProjectNode" />
               <item name="project_hkb_welfare" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="resell" type="462c0819:PsiDirectoryNode" />
+              <item name="vip" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -496,12 +449,15 @@
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="js.buildTools.gulp.gulp_package_dir" value="$PROJECT_DIR$/node_modules/gulp" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../project-jd-shop" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../project-jf-wechat" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\文件\project_hkb_welfare\src\view\homepage" />
       <recent name="D:\文件\project_hkb_welfare\src\component\homepage" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\文件\project_hkb_welfare\src\js" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -551,8 +507,8 @@
     </list>
     <recent_temporary>
       <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Gulp.js..dist" />
-        <item index="1" class="java.lang.String" itemvalue="Gulp.js..myServer" />
+        <item index="0" class="java.lang.String" itemvalue="Gulp.js..myServer" />
+        <item index="1" class="java.lang.String" itemvalue="Gulp.js..dist" />
       </list>
     </recent_temporary>
   </component>
@@ -577,23 +533,44 @@
       <workItem from="1526197235899" duration="13924000" />
       <workItem from="1526262409842" duration="5088000" />
       <workItem from="1526268701179" duration="7142000" />
-      <workItem from="1526284451236" duration="421000" />
+      <workItem from="1526284451236" duration="640000" />
+      <workItem from="1526285302351" duration="22000" />
+      <workItem from="1526353979918" duration="1647000" />
+      <workItem from="1526540085271" duration="508000" />
+      <workItem from="1526543494808" duration="27000" />
+      <workItem from="1526551352248" duration="1090000" />
+      <workItem from="1526552456510" duration="1581000" />
+      <workItem from="1526643406853" duration="2602000" />
+      <workItem from="1526704932325" duration="6146000" />
+      <workItem from="1526810400168" duration="34000" />
+      <workItem from="1526871211737" duration="13000" />
+      <workItem from="1526897511167" duration="1490000" />
+      <workItem from="1526956532360" duration="132000" />
+      <workItem from="1526973387503" duration="1048000" />
+      <workItem from="1527487150051" duration="588000" />
+      <workItem from="1527573333284" duration="3081000" />
+      <workItem from="1527645441316" duration="31687000" />
+      <workItem from="1527733901378" duration="51000" />
+      <workItem from="1527737844359" duration="1567000" />
+      <workItem from="1527834929267" duration="1238000" />
+      <workItem from="1527838251374" duration="2816000" />
+      <workItem from="1527846665363" duration="1833000" />
+      <workItem from="1528078629517" duration="94000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52234000" />
+    <option name="totallyTimeSpent" value="111748000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <layout>
-      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1923077" sideWeight="0.16344085" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1923077" sideWeight="0.8365591" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19178082" sideWeight="0.18064517" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19178082" sideWeight="0.81935483" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14946237" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16666667" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -618,214 +595,11 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/gulp/dev/server.dev.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gulp/dev/less.dev.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="36" column="32" lean-forward="true" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gulp/dev/js.dev.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="34" column="23" lean-forward="true" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/purchase_list.ejs" />
-    <entry file="file://$PROJECT_DIR$/gulp/dev/img.dev.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="27" column="1" lean-forward="false" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/purchase_list.less" />
-    <entry file="file://$PROJECT_DIR$/src/view/purchase_list.ejs" />
-    <entry file="file://$PROJECT_DIR$/gulp/dev/ejs.dev.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="37" column="63" lean-forward="false" selection-start-line="37" selection-start-column="63" selection-end-line="37" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/html/homepage.html" />
-    <entry file="file://$PROJECT_DIR$/src/view/card_show/confirm_order.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="4" column="15" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="15" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/card_show/card_show.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="15" lean-forward="true" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/card_show/card_bag.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/html/detail_list/detail_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/detail_list/detail_list.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="28" column="17" lean-forward="false" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/card_in/card_success.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="16" column="7" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="16" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/card_in/card_fail.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/card_in/in_fail.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/resell/resell_success.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/purchase_list/purchase_list.ejs" />
     <entry file="file://$PROJECT_DIR$/src/view/detail_list/detail_list.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="14" column="7" lean-forward="false" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/resell/resell.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="13" column="70" lean-forward="false" selection-start-line="13" selection-start-column="70" selection-end-line="13" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/card_show/card_bag.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/basic/jfShowTips.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="302" column="16" lean-forward="false" selection-start-line="302" selection-start-column="16" selection-end-line="302" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gulp/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/js/hkb_welfare.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2007">
-          <caret line="577" column="0" lean-forward="false" selection-start-line="577" selection-start-column="0" selection-end-line="577" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/card_in/card_fail.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="36" column="39" lean-forward="true" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/card_in/card_in.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="38" column="24" lean-forward="true" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/resell/resell_success.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="39" column="50" lean-forward="false" selection-start-line="39" selection-start-column="50" selection-end-line="39" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/resell/resell.js" />
-    <entry file="file://$PROJECT_DIR$/src/component/purchase_list/purchase_list.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/card_show/card_bag.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3000">
-          <caret line="250" column="0" lean-forward="false" selection-start-line="250" selection-start-column="0" selection-end-line="250" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/resell/resell.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2760">
-          <caret line="230" column="0" lean-forward="false" selection-start-line="230" selection-start-column="0" selection-end-line="230" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/card_show/card_show.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="76" column="35" lean-forward="false" selection-start-line="76" selection-start-column="35" selection-end-line="76" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/detail_list/detail_list.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="50" column="6" lean-forward="false" selection-start-line="50" selection-start-column="6" selection-end-line="50" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/purchase_list/purchase_list.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="516">
-          <caret line="43" column="8" lean-forward="false" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -836,97 +610,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/card_show/card_show.less">
+    <entry file="file://$PROJECT_DIR$/src/view/card_in/card_fail.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="912">
-          <caret line="76" column="25" lean-forward="false" selection-start-line="76" selection-start-column="25" selection-end-line="76" selection-end-column="25" />
-          <folding />
+        <state relative-caret-position="120">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/card_show/confirm_order.ejs">
+    <entry file="file://$PROJECT_DIR$/src/view/card_in/card_success.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="192">
+          <caret line="16" column="7" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="16" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/card_in/card_in.ejs">
+    <entry file="file://$PROJECT_DIR$/src/view/card_in/in_fail.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="192">
+          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/card_show/card_bag.ejs">
+    <entry file="file://$PROJECT_DIR$/gulp/dev/js.dev.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="182">
+          <caret line="20" column="39" lean-forward="true" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/card_show/confirm_order.less">
+    <entry file="file://$PROJECT_DIR$/src/js/hkb_welfare.js" />
+    <entry file="file://$PROJECT_DIR$/src/js/fastclick.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3036">
-          <caret line="253" column="20" lean-forward="false" selection-start-line="253" selection-start-column="20" selection-end-line="253" selection-end-column="20" />
-          <folding />
+        <state relative-caret-position="48">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/resell/resell.ejs">
+    <entry file="file://$PROJECT_DIR$/src/view/card_show/confirm_order.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1044">
-          <caret line="87" column="18" lean-forward="false" selection-start-line="87" selection-start-column="18" selection-end-line="87" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/card_in/in_fail.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="35" column="17" lean-forward="false" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/css/hkb_welfare.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="0" column="1047" lean-forward="false" selection-start-line="0" selection-start-column="1047" selection-end-line="0" selection-end-column="1047" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/homepage/homepage.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="564">
-          <caret line="47" column="25" lean-forward="false" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/purchase_list/purchase_list.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="6" column="6" lean-forward="false" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/homepage/homepage.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="15" column="7" lean-forward="false" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/homepage/homepage.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="84">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -937,26 +660,283 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/card_in/card_in.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/component/card_in/card_success.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="32" column="14" lean-forward="false" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
-          <folding />
+        <state relative-caret-position="324">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/card_in/in_fail.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="35" column="17" lean-forward="false" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/card_show/confirm_order.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="50" column="64" lean-forward="false" selection-start-line="50" selection-start-column="64" selection-end-line="50" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/resell/resell_success.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="39" column="50" lean-forward="false" selection-start-line="39" selection-start-column="50" selection-end-line="39" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/card_in/card_fail.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="35" column="17" lean-forward="false" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/card_show/confirm_order.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="571" column="0" lean-forward="false" selection-start-line="571" selection-start-column="0" selection-end-line="571" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/component/card_show/pay_success.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        <state relative-caret-position="12">
+          <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/card_show/card_bag.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulp/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="17" column="2" lean-forward="false" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/card_show/card_show.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="161" column="8" lean-forward="false" selection-start-line="161" selection-start-column="8" selection-end-line="161" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/basic/jfShowTips.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="674">
+          <caret line="300" column="39" lean-forward="false" selection-start-line="300" selection-start-column="39" selection-end-line="300" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/detail_list/detail_list.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="37" column="36" lean-forward="true" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/card_show/card_bag.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="31" column="28" lean-forward="true" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/homepage/homepage.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/card_show/card_show.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/js/fastclick.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/js/hkb_welfare.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6924">
+          <caret line="577" column="0" lean-forward="false" selection-start-line="577" selection-start-column="0" selection-end-line="577" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulp/dev/ejs.dev.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="54" column="176" lean-forward="false" selection-start-line="54" selection-start-column="176" selection-end-line="54" selection-end-column="176" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulp/dist/html.dist.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-252">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulp/dist/js.dist.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/resell/resell_success.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="14" column="7" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="14" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/html/vip/vip.html" />
+    <entry file="file://$PROJECT_DIR$/src/component/detail_list/detail_list.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="23" column="28" lean-forward="false" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/vip/vip.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="8" column="18" lean-forward="false" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/card_in/card_in.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/card_show/card_show.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="39" column="20" lean-forward="false" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/html/homepage/homepage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="482">
+          <caret line="126" column="13" lean-forward="true" selection-start-line="126" selection-start-column="13" selection-end-line="126" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/html/resell/resell.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1176">
+          <caret line="98" column="50" lean-forward="true" selection-start-line="98" selection-start-column="50" selection-end-line="98" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/card_show/card_bag.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="42" column="28" lean-forward="false" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/homepage/homepage.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-259">
+          <caret line="50" column="12" lean-forward="false" selection-start-line="50" selection-start-column="12" selection-end-line="50" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/card_show/card_show.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/homepage/homepage.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="701">
+          <caret line="125" column="25" lean-forward="false" selection-start-line="125" selection-start-column="25" selection-end-line="125" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/resell/resell.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build/css/hkb_welfare.css">
+    <entry file="file://$PROJECT_DIR$/build/html/vip/add_vip.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12">
-          <caret line="22" column="3" lean-forward="false" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/resell/resell.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="13" column="70" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/vip/add_vip.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/vip/vip.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="39" column="36" lean-forward="false" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/resell/resell.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="399" column="13" lean-forward="false" selection-start-line="399" selection-start-column="13" selection-end-line="399" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/resell/resell.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="507">
+          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
           <folding />
         </state>
       </provider>
