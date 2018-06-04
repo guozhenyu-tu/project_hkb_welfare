@@ -603,3 +603,341 @@ var hideDetail= {
     }
 
 }
+
+//同意服务协议
+function checkedService() {
+
+    //window.onload=function () {
+
+    // document.getElementsByClassName('bottom_btn')[0].className = 'bottom_btn gray_button_background';
+
+    var clickText=document.getElementsByClassName('agreement')[0].getElementsByTagName('label')[0];
+
+    clickText.addEventListener('click',function () {
+
+        var checkedBorrow=document.getElementsByClassName('tate_y')[0];
+
+        if (checkedBorrow.checked ==true) {
+
+            document.getElementsByClassName('gray_check_buy')[0].className = 'gray_check_buy check_buy';
+
+        }else {
+
+            document.getElementsByClassName('gray_check_buy')[0].className = 'gray_check_buy ';
+
+        }
+    },false)
+
+    // }
+
+}
+
+//------购物车加减按钮
+
+var jfProductDetails = {
+
+    volumeChange: function (isProduct) {  //如果是详情页的话为true，不是的话为false
+
+        var volumeBox = document.getElementsByClassName('volume_btn');
+
+        var lastScrollTop;
+
+        for (var i = 0; i < volumeBox.length; i++) {   //找到当前的父元素
+
+            volumeBox[i].getElementsByClassName('reduce')[0].addEventListener('touchstart', reduceEle, false);          //对 加&减
+
+            volumeBox[i].getElementsByClassName('add')[0].addEventListener('touchstart', reduceEle, false);
+
+            volumeBox[i].getElementsByClassName('volume_input')[0].addEventListener('blur', valueOne, false);          //对 加&减
+
+            if (browser.os.iOS && isProduct) {
+
+                var inputEle = volumeBox[i].getElementsByClassName('volume_input')[0];
+
+                inputEle.addEventListener('focus', focusScrollPosition, false);
+
+                inputEle.addEventListener('blur', blurScrollPosition, false);
+            }
+            /*            else {
+
+                            var inputEle = volumeBox[i].getElementsByClassName('volume_input')[0];
+
+                            inputEle.addEventListener('focus', focusAndroidTab, false);
+
+                            inputEle.addEventListener('blur', blurAndroidTab, false);
+
+
+
+                        }*/
+
+        }
+
+        function focusAndroidTab() {
+
+            document.getElementById('settlementTab').style.display = 'none';
+
+            document.getElementById('deleteTab').style.display = 'none';
+
+            document.getElementsByClassName('bottom_tabbar')[0].style.display = 'none'
+
+
+        }
+
+        function blurAndroidTab() {
+
+            document.getElementById('settlementTab').style.display = '';
+
+            document.getElementById('deleteTab').style.display = '';
+
+            document.getElementsByClassName('bottom_tabbar')[0].style.display = ''
+
+        }
+
+        function reduceEle() {
+
+
+            var eleInput = this.parentNode.getElementsByClassName('volume_input')[0];
+
+            var thisValue = parseInt(eleInput.value);
+
+            if (this.className.indexOf('reduce') > -1) {
+
+
+                eleInput.value = changeValue(thisValue - 1);
+
+
+            }
+            else {
+
+                eleInput.value = changeValue(thisValue + 1);
+
+            }
+
+
+        }
+
+        function changeValue(num) { //循环 小于等于1的时候永远为1，反之为他本身的值
+
+
+            if (num <= 1 || !num) {
+
+                return 1;
+            }
+            else {
+
+                return num;
+            }
+
+        }
+
+
+        function blurScrollPosition() {
+
+            window.scrollTo(0, lastScrollTop);
+
+            valueOne();
+
+
+        }
+
+        function valueOne() {
+
+            this.value = changeValue(this.value); //如果输入的内容为0或者空时,value为1
+
+        }
+
+        function focusScrollPosition() {
+
+            lastScrollTop = document.body.scrollTop;
+
+            setTimeout(function () {
+
+                window.scrollTo(0, document.body.scrollHeight);
+
+            }, 300)
+
+        }
+
+
+    },
+
+    //sku选择
+
+  /*
+        skuBoxChange: function () {
+
+        var skuBox = document.getElementById('main_sku').getElementsByClassName('sku_contain');
+
+        for (var i = 0; i < skuBox.length; i++) {
+
+            jfProductDetails.clickTabChange(skuBox[i], 'choose_tab', 'sku_box');
+        }
+
+    },
+
+    */
+
+    //------点击切换class
+
+    clickTabChange: function (fatherEle, changeClass, className) {
+
+
+        var allEle = fatherEle.getElementsByClassName(className);
+
+
+        for (var i = 0; i < allEle.length; i++) {
+
+            allEle[i].addEventListener('click', function () {
+
+                fatherEle.getElementsByClassName(changeClass)[0].className = fatherEle.getElementsByClassName(changeClass)[0].className.replace(changeClass, '');
+
+                this.className += ' ' + changeClass;
+
+            }, false);
+
+        }
+
+
+    },
+
+}
+
+
+var jfFrameDrag = {
+
+    dragEleshow: function (details) {/*出现方法*/
+
+        var _this = this;
+
+        _this.moveDistance = details.moveDistance || 0;//向上移动的距离
+
+        _this.initDistance=details.initDistance || '100%';//初始状态的位置,默认向上-100%或者向下移动100%
+
+        _this.targetButton=details.targetButton || 0;//点击的目标元素。ID选择器
+
+        _this.targetDragName = details.targetDragName || 0;//出现的目标元素；calss选择器
+
+        _this.hideButton = details.hideButton || 'check_btn';//关闭的按钮,class选择器
+
+        _this.showFn = details.showFn || 0;//同时出现的函数
+
+        _this.hideFn = details.hideFn || 0;//同时关闭的函数
+
+
+
+
+        var $main = document.getElementsByClassName('frame-main')[0];//主体
+
+        var $drag = document.getElementsByClassName('mask_drag')[0];//阴影
+
+
+        if (_this.targetDragName) {//如果当前页面有多个上拉框，则选择器需要的哪个
+
+            var $main = document.getElementsByClassName(_this.targetDragName)[0].getElementsByClassName('frame-main')[0];//主体
+
+            var $drag = document.getElementsByClassName(_this.targetDragName)[0].getElementsByClassName('mask_drag')[0]; //阴影
+
+        }
+
+        /*出现的方法*/
+        _this.run=function(){
+
+
+            if ($main.style.display = "none") {//如果为隐藏，下拉框收起中
+
+                document.getElementsByTagName("body")[0].className = "ovfHiden";//页面禁止滚动
+                document.getElementsByTagName("html")[0].className = "ovfHiden";//页面禁止滚动
+
+                $drag.style.display = "block";
+                $main.style.display = 'block';
+
+                setTimeout(function () {
+
+                    $drag.style.opacity = "0.6";
+
+                    $main.style.transform = "translate3d(0," + _this.moveDistance + ",0)";//到指定展现位置
+                    $main.style.webkitTransform = "translate3d(0," + _this.moveDistance + ",0)";
+
+
+                }, 10);
+
+
+                if (_this.showFn) {
+                    _this.showFn(); //执行 弹出时加入的函数参数
+                }
+
+            }
+
+        };
+        /*出现的方法*/
+        _this.stop=function(){
+
+            if ($main.style.display = "block") {
+
+                $main.style.transform = "translate3d(0,"+ _this.initDistance + ",0)";//到达平滑过渡开始位置
+                $main.style.webkitTransform = "translate3d(0,"+ _this.initDistance + ",0)";
+
+                //阴影透明度变化之后再发生效果
+                $drag.style.opacity = "0";
+
+
+                document.getElementsByTagName("body")[0].className = "";//页面可以滚动
+                document.getElementsByTagName("html")[0].className = "";//页面可以滚动
+
+
+                if (_this.hideFn) {
+                    _this.hideFn(); //执行 关闭时加入的函数参数
+                }
+
+            }
+
+            $drag.addEventListener('webkitTransitionEnd', opacityChange, false);
+            $drag.addEventListener('transitionend', opacityChange, false);
+
+            function opacityChange() {
+
+                $drag.style.display = "none";
+
+                $drag.removeEventListener('webkitTransitionEnd', opacityChange, false);
+                $drag.removeEventListener('transitionend', opacityChange, false); //取消平滑过渡后的绑定事件
+
+            } //事件解绑
+
+
+            $main.addEventListener('webkitTransitionEnd', listChange, false);
+            $main.addEventListener('transitionend', listChange, false); //主体的过渡事件
+
+
+            function listChange() {
+
+                $main.style.display = "none";
+
+                $main.removeEventListener('webkitTransitionEnd', listChange, false);
+                $main.removeEventListener('transitionend', listChange, false); //事件解绑
+
+            }
+        };
+
+
+        if(_this.targetButton){//如果点击元素存在
+            /*目标按钮点击出现*/
+            document.getElementById(_this.targetButton).onclick=function(){
+
+                _this.run();
+            };
+        }
+
+
+
+        /*阴影点击关闭*/
+        $drag.addEventListener("click",function(){
+            _this.stop()
+        },false);
+
+        /*关闭按钮点击关闭*/
+        $main.getElementsByClassName( _this.hideButton)[0].onclick=function(){
+            _this.stop()
+        }
+    }
+
+};

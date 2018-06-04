@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>话费卡</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,minimum-scale=1, maximum-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no, email=no">
+<link rel="stylesheet" href="../../css/hkb_welfare.min.css">
+</head>
+<body>
+
+
+<!--汇卡宝-话费卡-->
+
+
+<div class="show_box">
+
+    <div class="show_img">
+        <div class="show_left">
+            <p>￥<span>50</span></p>
+        </div>
+        <div class="show_right">三网通话费卡</div>
+    </div>
+    <div class="shop_num">
+        <div class="add_num_area">
+            <div class="add_tips">购买数量</div>
+            <div class="num_area volume_btn">
+                <button class="reduce">-</button>
+                <input type="number" pattern="[0-9]*" class="volume_input" value="1">
+                <button class="add">+</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="detail_text">
+    <!--详情-->
+    <p>图片详情图片详情图片详情图片详情图片详情图片详情图片详情图片详情图片详情图片详情图片详情</p>
+
+</div>
+<div class="bar"></div>
+<!--底部按钮-->
+<div class="bottom_btn">
+    <div class="agreement">
+        <label><input type="checkbox" class="tate_y">我已经阅读并同意</label><a href="#">《购买协议》</a>
+    </div>
+    <div class="bottom">
+        <div class="fixed_buy_btn">
+            <div class="price">
+                <div class="up">
+                    <span>售价：</span>
+                    <p>￥<span>99.00</span></p>
+                </div>
+            </div>
+            <a href="#" class="gray_check_buy">立即购买</a>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<script src="../../js/fastclick.min.js"></script>
+<script src="../../js/hkb_welfare.min.js"></script>
+<script src="../../js/jquery-3.0.0.min.js"></script><script src="../../js/hkb_welfare.min.js"></script>
+<script>
+
+
+    //同意服务协议按钮，可跳转链接
+    checkedService()
+
+    //购物车加减
+    jfProductDetails.volumeChange(true);
+
+    //选择
+
+    //jfProductDetails.skuBoxChange();
+
+    //弹出框
+    var personalHold=document.getElementsByClassName('gray_check_buy')[0];
+
+    personalHold.addEventListener('click',function () {
+
+        jfShowTips.dialogShow({
+            "mainText": "转卖损失金额10.00元",
+            "minText": "  ",
+            "hasCheck": false,
+            "hasCancel": true,
+            "checkFn": function () {
+
+                jfShowTips.dialogRemove();//弹出框消失
+
+            }
+        })
+
+
+    },false)
+
+
+
+</script>
+</body>
+</html>

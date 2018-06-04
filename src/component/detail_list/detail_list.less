@@ -1,74 +1,53 @@
-.detail_line{
-
-  width: 95%;
-
-  padding: 15px 2.5%;
-
-  background-color: #fff;
-
-  display: flex;
-
-  justify-content: space-around;
-
-  align-items: center;
-
-  margin-bottom: 5px;
-
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
-
-  &:last-child{
-
-    margin-bottom: 0px;
-
-  }
-
-  .left{
-
-    width: 40px;
-
-    height: 40px;
-
-  }
-
-  .center{
-
+.detail_list_all{
+  width: 100%;
+  .detail_box{
+    width: 92%;
+    margin: 4%;
+    height: 100px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
+    border-radius: 10px;
     display: flex;
-
-    flex-direction: column;
-
-    justify-content: space-between;
-
-    align-items: flex-start;
-
-  }
-
-  .right{
-
-    display: flex;
-
-    flex-direction: column;
-
-    justify-content: space-between;
-
-    align-items: flex-end;
-
-  }
-
-  .line_time{
-
-    span:first-child{
-
-      font-size: 16px;
+    justify-content: flex-start;
+    align-items: center;
+    .left{
+      width: 70%;
+      height: 80%;
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      flex-direction: column;
+      padding: 12px 0 12px 10px;
+      div{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        img{
+          width: 20px;
+          height: 20px;
+          margin-right: 5px;
+        }
+        span{
+          font-size: 14px;
+        }
+      }
+      p{
+        font-size: 14px;
+        color: #808080;
+      }
+    }
+    .right{
+      width: 25%;
+      height: 80%;
+      font-size: 14px;
+      color: #4a4a4a;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      flex-direction: column;
+      padding: 12px 10px 12px 0;
 
     }
-
-    span:last-child{
-
-      font-size: 12px;
-
-    }
-
   }
 
 }
-

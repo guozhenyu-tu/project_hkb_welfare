@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>添加银行卡</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,minimum-scale=1, maximum-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no, email=no">
+<link rel="stylesheet" href="../../css/hkb_welfare.min.css">
+</head>
+<body>
+
+
+<!--汇卡宝-添加银行卡-->
+
+<div class="add_card">
+    <div class="add_line">
+        <p class="add_name">姓名</p>
+        <p class="out_name">京晶婧</p>
+    </div>
+
+    <div class="add_line">
+        <p class="add_name">卡号</p>
+        <input class="out_name" pattern="[0-9]*" placeholder="请输入银行卡号">
+    </div>
+
+    <div class="add_line">
+        <p class="add_name">开户行</p>
+        <div class="out_right">
+            <img src="../../images/vip/icon-bank-1.png">
+            <input placeholder="请输入开户行">
+        </div>
+
+    </div>
+
+    <div class="add_line">
+        <p class="add_name">银行卡类型</p>
+        <p class="out_name">储蓄卡</p>
+    </div>
+
+    <div class="add_line">
+        <p class="add_name">所在地</p>
+        <input class="out_name" placeholder="请输入所在地">
+    </div>
+
+    <div class="add_line">
+        <p class="add_name">开户支行</p>
+        <input class="out_name" placeholder="请填写开户支行(选填)">
+    </div>
+
+    <div class="add_line">
+        <p class="add_name">手机号</p>
+        <div class="right">
+            <span>13099991111</span>
+            <div class="phone_code">
+                <div class="number_place">
+                    <input class="right_code_box" type="button" value="获取验证码" onclick="settime(this)">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="add_line">
+        <p class="add_name">验证码</p>
+        <input class="out_name" pattern="[0-9]*" placeholder="请填写验证码">
+    </div>
+
+</div>
+
+<!--底部按钮-->
+
+<div class="resell_bottom_box">
+
+    <a href="#">保存</a>
+
+</div>
+
+
+
+
+
+
+
+
+
+<script src="../../js/fastclick.min.js"></script>
+<script src="../../js/hkb_welfare.min.js"></script>
+<script src="../../js/jquery-3.0.0.min.js"></script><script src="../../js/hkb_welfare.min.js"></script>
+<script>
+
+
+
+    //获取验证码
+    var codeTime=60; //先声明一个变量为60s时间
+
+    function settime(obj) { //调用函数参数的方法
+
+        if (codeTime == 0) {  //如果变量等于0，也就是时间为0时
+
+            obj.removeAttribute("disabled");  //按钮可点击
+
+            obj.value="获取验证码";  //按钮文字为“获取验证码”
+
+            codeTime = 60;  //时间为60s
+
+            document.getElementsByClassName('phone_code')[0].className = 'phone_code';  //按钮颜色变灰色
+
+            return;
+
+        } else {  //反之
+
+            obj.setAttribute("disabled", true);  //按钮不可点击
+
+            obj.value="重新获取(" + codeTime + "s)";  //按钮文字为“重新获取”
+
+            codeTime--;  //时间60s递减
+
+            document.getElementsByClassName('phone_code')[0].className = 'phone_code grey_button';  //按钮颜色变橙色
+
+        }
+
+        setTimeout(function() {
+
+            settime(obj)  //参数每一秒执行一次
+
+        },1000)
+
+    }
+
+
+
+
+</script>
+</body>
+</html>
+
