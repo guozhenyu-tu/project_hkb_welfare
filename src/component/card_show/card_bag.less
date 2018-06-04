@@ -1,406 +1,133 @@
 .card_bag_list {
-
-  background: #ffffff;
-
-  margin-bottom: 10px;
-
-  padding-bottom: 10px;
-
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
-
-  .tittle {
-
-    text-align: center;
-
+  width: 92%;
+  margin: 4%;
+  .card_box {
+    margin-top: 10px;
     width: 100%;
+    height: 125px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    .left {
+      padding: 10px;
+      width: 30%;
+      .orange_box {
+        background-color: #ffb366;
+        border-radius: 4px;
+        color: #FFFFFF;
+        width: 100%;
+        position: relative;
+        &:after {
+          content: "";
+          position: absolute;
+          top: 60%;
+          right: 0;
+          width: 100%;
+          height: 7%;
+          background-image: url("../images/orange_line.png");
+          background-size: 100%;
+          background-repeat: no-repeat;
+        }
+        .up {
+          height: 60%;
+          width: 75%;
+          text-align: center;
+          padding: 10px 10px 5px 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          p {
+            font-size: 12px;
+            width: 100%;
+            span {
+              font-size: 26px;
+            }
+          }
 
-    font-size: 14px;
-
-    color: #10a6e2;
-
-    display: block;
-
-    line-height: 50px;
-
-    margin-bottom: 10px;
-
-    position: relative;
-
-    &:after {
-      position: absolute;
-      content: '';
-      width: 100%;
-      height: 1px;
-      left: 0;
-      bottom: 0;
-      border-bottom: 1px #DDDDDD solid;
-      transform: scaley(.3);
+        }
+        .down {
+          height: 40%;
+          text-align: center;
+          padding: 10px 15px 6px 15px;
+        }
+      }
     }
-
-  }
-
-  .list_line {
-
-    .list_text {
-
+    .right {
+      width: 66%;
+      height: 100%;
       display: flex;
-
-      justify-content: space-between;
-
-      align-items: center;
-
-      padding: 10px 15px;
-
-      position: relative;
-
-      &:after {
-        position: absolute;
-        content: '';
-        border-bottom: 2px solid #808080;
-        border-right: 2px solid #808080;
-        right: 20px;
-        bottom: 45%;
-        width: 10px;
-        height: 10px;
-        opacity: .8;
-        border-bottom-right-radius: 4px;
-        transform: rotate(45deg);
-      }
-
-      p {
-
-        font-size: 14px;
-
-        color: #4A4A4A;
-
-      }
-
-    }
-
-    .list_text_r {
-
-      &:after {
-
-        right: 20px;
-        top: 45%;
-
-        transform: rotate(225deg);
-      }
-    }
-
-    /*展开内容*/
-
-      .claims_things_detail {
-
-        transition: all .5s linear;
-
-        position: relative;
-
-        overflow: hidden;
-
-        height: 0px;
-
-      }
-
-      .detail_all {
-
-        padding: 15px 15px;
-
+      justify-content: space-around;
+      align-items: flex-end;
+      flex-direction: column;
+      .up {
+        width: 92%;
+        padding-right: 8%;
+        height: 60%;
         display: flex;
-
-        flex-direction: column;
-
         justify-content: space-between;
-
         align-items: flex-start;
-
+        padding-top: 10px;
         position: relative;
-
-        background-color: #fbfbfb;
-
+        color: #4a4a4a;
+        p:first-child{
+          font-size: 14px;
+          color: #4A4A4A;
+        }
+        p:last-child{
+          font-size: 12px;
+          color: #808080;
+        }
         &:after {
           position: absolute;
-          content: '';
+          content: "";
+          border-bottom: 1px solid #e5e5e5;
           width: 95%;
           height: 1px;
-          left: 2.5%;
           bottom: 0;
-          border-bottom: 1px #DDDDDD solid;
-          transform: scaley(.3);
+          right: 5%;
+          transform: scaleY(0.4);
         }
-
-        &:last-child:after {
-
-          border-bottom: none;
-
-        }
-
-        &:nth-child(n) {
-
-          background-color: #fbfbfb;
-
-        }
-
-        &:nth-child(2n) {
-
-          background-color: #f7f7f7;
-
-        }
-
-        a {
-
-          color: #4A4A4A;
-
-        }
-
-        .up{
-
-          width: 100%;
-
-          display: flex;
-
-          justify-content: space-between;
-
-          align-items: center;
-
-          .detail_left {
-
-            width: 80px;
-
-            height: 80px;
-
-          }
-
-          .detail_center{
-
-            margin-left: 10px;
-
-            font-size: 14px;
-
-            width: calc(100vw);
-
-            display: flex;
-
-            flex-direction: column;
-
-            justify-content: space-between;
-
-            align-items: flex-start;
-
-            div{
-
-              width: 70%;
-
-              display: flex;
-
-              justify-content: space-between;
-
-              align-items: center;
-
-              p{
-
-                font-size: 14px;
-
-              }
-
-            }
-
-          }
-
-          .detail_right {
-
-            width: 55%;
-
-            display: flex;
-
-            flex-direction: column;
-
-            justify-content: space-between;
-
-            align-items: center;
-
-            img{
-
-              width: 26px;
-
-              height: 26px;
-
-            }
-
-            p{
-
-              margin-top: 4px;
-
-              font-size: 12px;
-
-            }
-
-            a{
-
-              border: 1px solid #dddddd;
-
-              padding: 4px 5px;
-
-            }
-
-          }
-
-        }
-
-        .down{
-
-          width: 95%;
-
-          display: flex;
-
-          justify-content: space-between;
-
-          align-items: center;
-
-          padding:  10px 2.5% 0 2.5%;
-
-          margin:  10px 0 0 0;
-
-          border-top: 1px solid #DDDDDD;
-
-          a:first-child{
-
-            width: 60%;
-
-          }
-
-          a:last-child{
-
-            padding: 4px 12px;
-
-            border: 1px solid #ff8000;
-
-            color: #ff8000;
-
-            font-size: 12px;
-
-            border-radius: 5px;
-
-            text-align: center;
-
-
-          }
-
-        }
-
       }
-
-    }
-
-    .block_claims_things_detail {
-
-      // 6p、7p、8p尺寸
-
-      .claims_things_detail {
-
-        height: 170px;
-
-        overflow: auto;
-
-        transition: height .5s linear;
-
-        // 6、7、8尺寸；
-
-        @media screen and(max-width: 375px) {
-
-          height: 170px;
-
-          overflow: auto;
-
-          transition: all .5s linear;
+      .down {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 40%;
+        color: #808080;
+        .down_left, .down_right {
+          width: 50%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #808080;
+          &:active{
+            color: #808080;
+          }
+          img {
+            width: 20px;
+            height: 20px;
+            margin-left: 6px;
+          }
         }
-
-        //5s尺寸；
-
-        @media screen and(max-width: 320px) {
-
-          height: 210px;
-
-          overflow: auto;
-
-          transition: all .5s linear;
+        .down_right{
+          position: relative;
+          &:after {
+            position: absolute;
+            content: "";
+            border-left: 1px solid #e5e5e5;
+            width: 1px;
+            height: 90%;
+            bottom: 5%;
+            left: 0;
+            transform: scaleX(0.4);
+          }
         }
-
       }
-
     }
-
   }
-
-  .claims_none_box {
-
-    width: 100%;
-
-    height: 50px;
-
-  }
-
-  .claims_bottom_box {
-
-    position: fixed;
-
-    bottom: 0;
-
-    left: 0;
-
-    padding: 10px 0;
-
-    background-color: #FFFFFF;
-
-    width: 100%;
-
-    display: flex;
-
-    justify-content: space-between;
-
-    align-items: center;
-
-    color: #4A4A4A;
-
-    span {
-
-      margin-left: 15px;
-
-    }
-
-    a {
-
-      text-align: center;
-
-      line-height: 24px;
-
-      margin-right: 15px;
-
-      color: #10a6e2;
-
-      width: 80px;
-
-      height: 24px;
-
-      border: 1px solid #10a6e2;
-
-      border-radius: 4px;
-
-    }
-
-  }
-
-/*状态更换颜色*/
-
-.list_box .list_line .detail_all .detail_left .detail_text_down .claims_state_gray{
-
-  background-color: #808080;
-
-  box-shadow: 0 2px 4px 0 #5f5f5f;
-
-
 }
-
-
-
-
