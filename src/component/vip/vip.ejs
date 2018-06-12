@@ -23,9 +23,27 @@
         <p class="out_name">储蓄卡</p>
     </div>
 
-    <div class="add_line">
+    <div class="add_line" onclick="productAddress.show({fn:
+
+function(){
+
+     shoppingCart.run({
+     api: '../../api/address.json',
+     type: 'get',
+     targetDom:document.getElementById('product_address_show'),
+     fn:function() {
+
+       productAddress.hide();
+        console.log(chooseAdressId);//当前选择地址ID
+     }
+
+     })
+}
+
+})">
         <p class="add_name">所在地</p>
-        <input class="out_name" placeholder="请输入所在地">
+
+        <div class="add_vip_icon" id="product_address_show">请输入地址</div>
     </div>
 
     <div class="add_line">
@@ -33,36 +51,41 @@
         <input class="out_name" placeholder="请填写开户支行(选填)">
     </div>
 
-    <div class="add_line">
-        <p class="add_name">手机号</p>
-        <div class="right">
-            <span>13099991111</span>
-            <div class="phone_code">
-                <div class="number_place">
-                    <input class="right_code_box" type="button" value="获取验证码" onclick="settime(this)" />
-                </div>
+    <div class="add_line add_vip">
+        <input class="add_vip_name"pattern="[0-9]*" class="left_code" placeholder="请填写验证码">
+
+        <div class="phone_code">
+            <div class="number_place">
+                <input class="right_code_box" type="button" value="获取验证码" onclick="settime(this)" />
             </div>
         </div>
     </div>
 
-    <div class="add_line">
-        <p class="add_name">验证码</p>
-        <input class="out_name"pattern="[0-9]*" class="left_code" placeholder="请填写验证码">
-    </div>
-
 </div>
+
+<%- include('../../component/vip/address_popup.ejs')%>
 
 <!--底部按钮-->
 
-<div class="resell_bottom_box">
+<div>
+    <div class="resell_bottom_box">
 
-    <a href="#">保存</a>
+        <a href="#">保存</a>
 
+    </div>
+
+    <div class="resell_bottom_plate"></div>
 </div>
 
 
 
 <script>
+
+    productAddress = new jfShowPop({
+
+        'ele': 'product_address'
+
+    })
 
 
     //获取验证码
