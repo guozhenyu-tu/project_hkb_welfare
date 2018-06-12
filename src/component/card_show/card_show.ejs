@@ -1,3 +1,6 @@
+<!--汇卡宝-话费卡-->
+
+
 <div class="show_box">
 
     <div class="show_img">
@@ -11,7 +14,7 @@
             <div class="add_tips">购买数量</div>
             <div class="num_area volume_btn">
                 <button class="reduce">-</button>
-                <input type="number" pattern="[0-9]*" class="volume_input" value="1"/>
+                <input type="number" pattern="[0-9]*" class="volume_input" value="1">
                 <button class="add">+</button>
             </div>
         </div>
@@ -26,7 +29,7 @@
 <!--底部按钮-->
 <div class="bottom_btn">
     <div class="agreement">
-        <label><input type="checkbox"  class="tate_y">我已经阅读并同意</label><a href="#">《购买协议》</a>
+        <label><input type="checkbox" class="tate_y">我已经阅读并同意</label><a href="#" class="show_agreement">《购买协议》</a>
     </div>
     <div class="bottom">
         <div class="fixed_buy_btn">
@@ -41,7 +44,95 @@
     </div>
 </div>
 
+
+<!----购买协议弹出框---->
+<div class="buy_agreement_bgd"></div>
+
+<div class="buy_agreement_plate">
+    <div class="buy_agreement_top">
+        <p class="agreement_top_font">委托售卡协议</p>
+
+        <button class="agreement_close_btn">X</button>
+    </div>
+
+    <div class="buy_agreement_text">
+
+        <p>尊敬的用户，欢迎使用汇卡宝生活“福利集市”功能。</p>
+
+        <p>依据《中华人民共和国合同法》、《中华人民共和国民法总则》等相关法律，本着平等互利的原则，就预付卡委托售卡事宜达成如下协议。</p>
+
+        <p>本协议是您（或称”用户“）与汇卡宝生活（以下简称”平台“）之间就委托售卡所订立的契约。在您选择该产品服务前，请您仔细阅读本协议的全部内容，如您不同意本协议或其中任何条款约定，请您停止使用“福利集市”功能；您点击“同意”按钮后，本协议及构成对双方有约束力的法律文件。</p>
+
+        <h4>一、委托内容</h4>
+
+        <p>用户委托汇卡宝生活售卡，汇卡宝生活帮助用户对卡进行出售，售卡资金由平台代收，平台扣除一定比例的服务费后，剩余售卡资金将通过银行代付至用户所绑定的银行卡账户。</p>
+
+        <h4>二、产品使用</h4>
+
+        <p>1、用户委托汇卡宝生活出售总面额为     元的      预付卡。</p>
+
+        <p>2、用户向汇卡宝生活支付委托售卡总面额 4% 的服务费。</p>
+
+        <p>3、在您委托汇卡宝生活出售预付卡后，请在系统内仔细填写并绑定您的银行卡账户信息，包括姓名、银行卡号、开户银行、所在地区、开户支行等，便于资金按时到账。</p>
+
+        <h4>三、争议解决</h4>
+
+        <p>1、若发生争议，双方应协商解决。协商不成，任何一方可向平台注册所在地的仲裁委员会提起仲裁。仲裁费、律师费、公证费、签定费等合理费用由违约方承担。</p>
+
+        <h4>四、本协议签订地点为汇卡宝生活所属公司所在地上海市徐汇区。</h4>
+
+        <div class="payfor_button">
+            <a class="immediately_payfor" href="#">知道了</a>
+        </div>
+    </div>
+</div>
+
 <script>
+
+    //购买协议弹框
+    var showClick=document.getElementsByClassName('show_agreement')[0];
+
+    var hideAgreement=document.getElementsByClassName('agreement_close_btn')[0];
+
+    var clickBtn=document.getElementsByClassName('immediately_payfor')[0];
+
+    showClick.addEventListener('click',function () {
+
+        document.getElementsByClassName('buy_agreement_bgd')[0].className = 'buy_agreement_bgd show_buy_agreement';
+
+        document.getElementsByClassName('buy_agreement_plate')[0].className = 'buy_agreement_plate show_buy_agreement';
+
+        document.getElementsByTagName('body')[0].className = 'ovfHiden';
+
+        document.getElementsByTagName('html')[0].className = 'ovfHiden';
+
+    },false)
+
+    //点击关闭按钮
+    hideAgreement.addEventListener('click',function () {
+
+        document.getElementsByClassName('buy_agreement_bgd')[0].className = 'buy_agreement_bgd';
+
+        document.getElementsByClassName('buy_agreement_plate')[0].className = 'buy_agreement_plate';
+
+        document.getElementsByTagName('body')[0].className = '';
+
+        document.getElementsByTagName('html')[0].className = '';
+
+    })
+
+    //点击知道了按钮
+    clickBtn.addEventListener('click',function () {
+
+        document.getElementsByClassName('buy_agreement_bgd')[0].className = 'buy_agreement_bgd';
+
+        document.getElementsByClassName('buy_agreement_plate')[0].className = 'buy_agreement_plate';
+
+        document.getElementsByTagName('body')[0].className = '';
+
+        document.getElementsByTagName('html')[0].className = '';
+
+    }),
 
     //同意服务协议按钮，可跳转链接
     checkedService()

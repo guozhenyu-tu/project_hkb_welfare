@@ -1,44 +1,99 @@
+<div>
 
-<div class="card_in_all">
+    <label class="input_number">
+        <input class="number_tips" type="tel" value="" placeholder="请输入手机号码" maxlength="11">
 
-    <div class="number">
+        <div class="number_font">
+            <p class="mynumber"></p>
+        </div>
+    </label>
 
-        <span>手机号</span>
-
-        <input type="tel" pattern="[0-9*]" placeholder="请输入手机号">
-
-    </div>
-
-
-    <div class="card_inf">
-
-        <div class="inf_tittle">充话费</div>
-
-        <div class="money">
-
-            <div class="tab_value">
-                <span class="nocards">50元</span>
-                <span class="choosed">100元</span>
-                <span class="nocards">200元</span>
-                <span class="nocards">400元</span>
-                <span class="nocards">500元</span>
-                <span class="nocards">800元</span>
-                <span class="nocards">1000元</span>
-            </div>
-
+    <div class="number_money">
+        <div class="payfor_phone">
+            <p>充流量</p>
         </div>
 
+        <div class="all_fare">
+            <!--无法选择的样式就是不添加后面两个任何一个样式，可选择的样式 can_checked ；选中的样式 checked_orange ；-->
+            <div class="phone_fare can_checked">
+                <p class="phone_fare_price">50M</p>
+
+                <p class="phone_fare_price"><span>5.00</span><span>元</span></p>
+            </div>
+
+            <div class="phone_fare can_checked">
+                <p class="phone_fare_price">100M</p>
+
+                <p class="phone_fare_price">10.00元</p>
+            </div>
+
+            <div class="phone_fare can_checked">
+                <p class="phone_fare_price">200M</p>
+
+                <p class="phone_fare_price">20.00元</p>
+            </div>
+
+            <div class="phone_fare can_checked">
+                <p class="phone_fare_price">500M</p>
+
+                <p class="phone_fare_price">50.00元</p>
+            </div>
+
+            <div class="phone_fare">
+                <p class="phone_fare_price">1000M</p>
+
+                <p class="phone_fare_price">100.00元</p>
+            </div>
+
+            <div class="phone_fare">
+                <p class="phone_fare_price">1000M</p>
+
+                <p class="phone_fare_price">100.00元</p>
+            </div>
+        </div>
+
+        <div class="payfor_phone">
+            <p>支持全国联通/移动/电信</p>
+
+            <p>由于地区不同，充值到账可能会有5分钟-10分钟延迟</p>
+        </div>
+
+        <div class="payfor_button">
+            <a class="immediately_payfor" href="card_success.html">立即充值</a>
+        </div>
     </div>
-
-
-    <!--按钮-->
-    <div class="payment_operation">
-
-        <p class="hkb_pay_btn_area">
-            <a class="pay_success_btn" href="card_success.html">立即充值</a>
-        </p>
-
-    </div>
-
-
 </div>
+
+
+<script>
+
+    //选择金额
+    var checkedPrice=document.getElementsByClassName('phone_fare');
+
+    for (var i=0;i<checkedPrice.length;i++) {
+
+        checkedPrice[i].addEventListener('click',function () {
+
+            if (this.className.indexOf('can_checked')>-1) {
+
+                this.className = 'phone_fare checked_orange';
+
+                for (var i=0;i<checkedPrice.length;i++) {
+
+                    if (checkedPrice[i].className.indexOf('checked_orange')>-1) {
+
+                        checkedPrice[i].className = 'phone_fare can_checked';
+
+                        this.className = 'phone_fare checked_orange';
+
+                    }
+
+                }
+
+            }
+
+        },false)
+
+    }
+
+</script>

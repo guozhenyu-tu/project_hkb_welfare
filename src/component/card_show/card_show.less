@@ -7,7 +7,7 @@
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
   .show_img {
     width: 100%;
-    height: 125px;
+    height: calc(~"100vw/623*208");
     background-image: url("../images/show_bg.png");
     background-repeat: no-repeat;
     background-size: 100%;
@@ -240,4 +240,77 @@
       opacity: 0.6;
     }
   }
+}
+
+/******协议弹框******/
+.buy_agreement_bgd {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: .3;
+  position: absolute;
+  top: 0;
+  z-index: 1006;
+  display: none
+}
+
+.buy_agreement_plate {
+  position: fixed;
+  width: 90%;
+  height: 95%;
+  background-color: #fff;
+  z-index: 1008;
+  top: 2.5%;
+  left: 5%;
+  border-radius: 10px;
+  overflow: hidden;
+  display: none
+}
+
+.buy_agreement_top {
+  background-color: #ff8000;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
+
+.agreement_top_font {
+  color: #fff;
+  font-size: 16px
+}
+
+.agreement_close_btn {
+  width: 25px;
+  height: 25px;
+  border: 1px #fff solid;
+  text-align: center;
+  line-height: 25px;
+  color: #fff;
+  background: 0;
+  border-radius: 50%
+}
+
+.buy_agreement_text {
+  margin: 15px;
+  height: 90%;
+  overflow: auto;
+  margin-bottom: 0;
+
+  h4 {
+    text-align: center;
+    color: #4a4a4a;
+    font-size: 16px
+  }
+
+  p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 10px
+  }
+
+}
+
+.show_buy_agreement {
+  display: block
 }

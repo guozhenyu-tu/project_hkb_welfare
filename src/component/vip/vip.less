@@ -9,7 +9,7 @@
     content: none;
   }
   .add_line{
-    padding: 15px 5%;
+    padding: 20px 4%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,7 +27,6 @@
     }
     .add_name,.out_name{
       font-size: 14px;
-      width: 50%;
     }
     .add_name{
       color: #808080;
@@ -71,4 +70,40 @@
       }
     }
   }
+}
+
+.add_vip {
+
+  .add_vip_name {
+    text-align: left;
+    width: 50%;
+    font-size: 14px;
+    color: #4A4A4A;
+  }
+
+  .phone_code {
+    padding: 0;
+    width: 35%;
+  }
+
+}
+
+.add_vip_icon {
+  color: #ababab;
+  font-size: 14px;
+  padding-right: 20px;
+  position: relative;
+
+  &:after {
+    position: absolute;
+    content: '';
+    width: 8px;
+    height: 8px;
+    right: 0;
+    top: 6px;
+    border-top: 1px #ababab solid;
+    border-right: 1px #ababab solid;
+    transform: rotate(45deg);
+  }
+
 }
