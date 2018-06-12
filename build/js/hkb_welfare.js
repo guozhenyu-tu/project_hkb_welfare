@@ -501,6 +501,58 @@ var jfShowTips = {
 
 /*通用UIjs结束*/
 
+var bankCard={
+
+    actionCard:function () {
+
+        var showDeltet=document.getElementsByClassName('bank_card_plate'); //点击银行卡
+
+        var hideDelete=document.getElementsByClassName('hide_btn'); //点击取消
+
+        //点击银行卡显示
+        for (var i=0;i<showDeltet.length;i++) {
+
+            showDeltet[i].addEventListener('click',function () {
+
+                var showHide=this.parentNode;
+
+                showHide.className = 'bank_card_main none_card_btn';
+
+                var cardDiv=document.getElementsByClassName('bank_card_main'); //共有的父级元素
+
+                for (var i=0;i<cardDiv.length;i++) {
+
+                    //所有的父级元素循环，只要有显示的先隐藏，再显示当前点击的
+                    if (cardDiv[i].className.indexOf('none_card_btn')>-1) {
+
+                        cardDiv[i].className = 'bank_card_main';
+
+                        showHide.className = 'bank_card_main none_card_btn';
+
+                    }
+
+                }
+
+            },false)
+
+        }
+
+        //点击取消隐藏
+        for (var i=0;i<hideDelete.length;i++) {
+
+            hideDelete[i].addEventListener('click',function () {
+
+                var hideShow=this.parentNode.parentNode;
+
+                hideShow.className = 'bank_card_main';
+
+            },false)
+
+        }
+
+    }
+
+}
 //点击展开，收起
 var hideDetail= {
 
@@ -939,5 +991,661 @@ var jfFrameDrag = {
             _this.stop()
         }
     }
+
+};
+
+/**
+ * Created by PC on 2017/12/5.
+ */
+/**
+ * Created by Administrator on 2017/6/7.
+ */
+var shoppingCart = {
+
+    changeX:1,
+
+    changeY:1,
+    /*加载方法*/
+    xhr: function (details) {
+
+        var _this = this;
+
+        var api = details.api || 0;
+
+        var type = details.type || 'get';
+
+        var xhr = function () {
+            if (window.XMLHttpRequest) {
+                return new XMLHttpRequest();
+            } else {
+                return new ActiveObject('Micrsorf.XMLHttp');
+            }
+        }();
+
+        xhr.onreadystatechange = function () {
+            switch (xhr.readyState) {
+                case 0 :
+                    // console.log(0, '未初始化....');
+                    break;
+                case 1 :
+                    /*console.log(1, '请求参数已准备，尚未发送请求...');*/
+                    break;
+                case 2 :
+                    /*console.log(2, '已经发送请求,尚未接收响应');*/
+                    break;
+                case 3 :
+                    /*console.log(3, '正在接受部分响应.....');*/
+                    break;
+                case 4 :
+                    /*console.log(4, '响应全部接受完毕');*/
+                    if ((xhr.status >= 200 && xhr.status < 300) || xhr.status == 304) {
+
+                        _this.fn(xhr.responseText,details)
+
+                    }
+
+                    else {
+
+                        console.log('读取失败');
+
+                    }
+                    break;
+            }
+        };
+
+        xhr.open(type, api);
+
+        xhr.send(null);
+
+    },
+
+    run: function (details) {
+
+        this.xhr(details);
+
+        this.changeClass(details)
+
+    },
+
+    //切换样式名称
+    changeClass: function () {
+
+        var allEle = document.getElementById('jd_address_select');
+
+        var firstEle = allEle.getElementsByClassName('top_address')[0].getElementsByTagName('div');
+
+        if(allEle.getElementsByClassName('show')[0]){
+
+            clearClass(1)
+        }
+
+        firstEle[0].innerHTML='请选择';
+
+        if(firstEle[0].className.indexOf('show')==-1) {
+
+            firstEle[0].className = 'show';
+
+        }
+
+        if(allEle.getElementsByClassName('address')[0].className.indexOf('show')==-1) {
+
+            allEle.getElementsByClassName('address')[0].className += ' show';
+
+        }
+
+        if(this.changeX) {
+
+            for (var i = 0; i < firstEle.length; i++) {
+
+                firstEle[i].addEventListener('click', clickEle, false)
+
+            }
+
+            this.changeX=0;
+
+        }
+
+        function clickEle() {
+
+            clearClass(2);
+
+            for (var j = 0; j < firstEle.length; j++) {
+
+                if (this == firstEle[j]) {
+
+                    break
+
+                }
+
+            }
+
+            this.className = 'show';
+
+            allEle.getElementsByClassName('address')[j].className += ' show';
+
+
+        }
+
+        function clearClass(num) {
+
+            for (var i = 0; i < num; i++) {
+
+                allEle.getElementsByClassName('show')[0].className = allEle.getElementsByClassName('show')[0].className.replace('show', '');
+
+            }
+
+        }
+
+    },
+
+    /*渲染地址列表*/
+    fn: function (thisJson,details) {
+
+        var thisWrightHtml = details.targetDom;
+
+        var thisFn = details.fn;
+
+        var ele = document.getElementById('jd_address_select');
+
+        var data = JSON.parse(thisJson).data;
+
+        var tabCity = ele.getElementsByClassName('top_address')[0].getElementsByTagName('div');
+
+        for(var i=1;i<tabCity.length;i++){
+
+            tabCity[i].innerHTML=""
+
+        }
+
+        addLi(ele.getElementsByClassName('address')[0], data);
+
+        function addLi(faEle, allData) {
+
+            var thisDomH = '<p data-li="';
+
+            var thisDomM = '">';
+
+            var thisDomB = '</p>';
+
+            var writeDom = '';
+
+
+            for (var i = 0; i < allData.length; i++) {
+
+                writeDom += thisDomH + i + thisDomM + allData[i].name + thisDomB
+
+            }
+
+            faEle.innerHTML = writeDom;
+
+            var allP = faEle.getElementsByTagName('p');
+
+            for (var j = 0; j < allP.length; j++) {
+
+                allP[j].addEventListener('click', clickFn, false)
+
+            }
+
+        }
+
+        /*每个元素点击事件*/
+        function clickFn() {
+
+            if (this.parentNode.getElementsByClassName('p_show')[0]) {
+
+                this.parentNode.getElementsByClassName('p_show')[0].removeAttribute('class');
+
+            }
+
+            this.className = 'p_show'
+
+        }
+
+
+        var allTab = ele.getElementsByClassName('address');
+
+        if(this.changeY) {
+
+            for (var i = 0; i < allTab.length; i++) {
+
+                allTab[i].addEventListener('click', fatherEleClick)
+
+            }
+
+            this.changeY=0;
+
+        }
+
+        var allCityPoint = [];
+
+        var thisCityAll = [];
+
+        //chooseAdressId=[];
+
+        /*每个父切换元素*/
+        function fatherEleClick(evt) {
+
+            if (this.className.indexOf('show') > -1) {
+
+                for (var j = 0; j < allTab.length; j++) {
+
+                    if (this == allTab[j]) {
+
+                        break
+
+                    }
+
+                }
+
+                /*渲染下一个列表*/
+
+                var thisNum = evt.target.getAttribute('data-li');
+
+                allCityPoint[j] = thisNum;
+
+                allCityPoint=allCityPoint.slice(0,j+1);
+
+                var thisData = data;
+
+                var thisCity;
+
+                for (var z = 0; z <= j; z++) {
+
+                    thisCity = thisData[allCityPoint[z]];
+
+                    thisData = thisCity.child;
+
+                    if(!thisData)break
+
+                }
+
+
+
+                /*修改tab*/
+
+                var tabCity = ele.getElementsByClassName('top_address')[0].getElementsByTagName('div');
+
+                thisCityAll[j] = thisCity.name;
+
+                thisCityAll=thisCityAll.slice(0,j+1);
+
+                tabCity[j].innerHTML = thisCity.name;
+
+                tabCity[j].removeAttribute('class');
+
+
+                if (thisData) {
+
+                    tabCity[j + 1].innerHTML = '请选择';
+
+                    tabCity[j + 1].className = 'show';
+
+                    allTab[j + 1].className += ' show';
+
+                    this.className = this.className.replace(' show', '');
+
+                    addLi(allTab[j + 1], thisData);
+
+                }
+
+                else {
+
+                    var thisInnerHtml='';
+
+                    for (var x = 0; x < thisCityAll.length; x++) {
+
+                        thisInnerHtml += thisCityAll[x];
+
+                        if(x!=thisCityAll.length-1) {
+
+                            thisInnerHtml += ','
+
+                        }
+
+
+
+                    }
+
+                    thisWrightHtml.innerHTML=thisInnerHtml;
+
+
+                    chooseAdressId=(function(){
+
+
+                        var allNum=[];
+
+                        var thisData=data;
+
+
+                        for(var i=0;i<allCityPoint.length;i++) {
+
+                            allNum[i]=thisData[allCityPoint[i]].id;
+
+                            thisData=thisData[allCityPoint[i]].child;
+
+                        }
+
+                        return allNum;
+
+                        //地址数据data;
+
+
+                    })();
+
+
+                    setTimeout(function () {
+
+                        thisFn();
+
+
+
+
+                    },300)
+
+
+
+                }
+                //切换tab
+
+
+            }
+
+        }
+
+    },
+
+
+};
+
+
+
+/**
+ * Created by PC on 2017/12/5.
+ */
+
+var jfShowPop = function (details) {
+
+    if(!details){
+
+        details ={}
+
+    }
+
+    this.details = details;
+
+    var thisEle = document.getElementById(this.details.ele);
+
+    //var thisfatherEle = this.details.fatherId || 0;
+
+    var thishasScrollEle = this.details.scrollClassname || 0;
+
+
+    thisEle.getElementsByClassName('pop_cancel')[0].addEventListener('click', clickEven.bind(this), false);
+
+    thisEle.getElementsByClassName('jf_pop_up_bg')[0].addEventListener('click', clickEven.bind(this), false);
+
+
+    if(thishasScrollEle){
+
+        clickThought(thishasScrollEle);
+
+    }
+
+
+    function clickThought(thishasScrollEle) {
+
+
+        var thisScrollEle = thisEle.getElementsByClassName(thishasScrollEle)[0];
+
+        var thisVolum = thisEle.getElementsByClassName('sku_volume_purchased')[0];
+
+        var popTop = thisEle.getElementsByClassName('pop_top')[0];
+
+        var thisAddress = thisEle.getElementsByClassName('top_address')[0];
+
+        var startY, endY, distance;//开始距离、移动距离
+
+        thisScrollEle.addEventListener('touchstart', touchStartEle, false);
+
+        thisScrollEle.addEventListener('touchmove', reachEdge, false);
+
+
+        //如果有这个元素 就绑定禁止事件
+        if(thisVolum){
+
+            thisVolum.addEventListener('touchmove',windowBanEvent.Canceling,false);
+        }
+
+        if(thisAddress){
+
+            thisAddress.addEventListener('touchmove',windowBanEvent.Canceling,false);
+
+        }
+
+        popTop.addEventListener('touchmove',windowBanEvent.Canceling,false);
+
+        //thisScrollEle.addEventListener('touchmove', reachEdge, false);
+
+
+        function touchStartEle(e) {
+
+            //touchstart 获取位置startY
+
+            startY = e.touches[0].pageY;
+
+        }
+
+
+        function reachEdge(event) {
+
+            var _this = this;
+
+            var eleScrollHeight = _this.scrollTop;//获取滚动条的位置 206
+
+            var eleHeight = _this.scrollHeight;//元素实际高度 506
+
+            var containerHeight = _this.offsetHeight;//容器高度 300
+
+            var eleClientHeight = _this.clientHeight ;//可视区域的高度 243
+
+            //console.log(eleClientHeight);
+
+            //touchmove 获取位置 endY
+
+            endY = event.touches[0].pageY;
+
+            //两者之减的距离用来判断是向上活动还是向下滑动
+            distance = startY - endY;
+
+            //此时touchmove的值等于touchstart的值 循环
+            endY = startY;
+
+            //如果滚动条不存在  禁止事件
+
+            if(Math.abs(parseFloat(eleHeight)- parseFloat(eleClientHeight) )<3){
+
+                event.preventDefault()
+
+            }
+
+            //滚动条到达底部
+
+            if (Math.abs(parseFloat(eleHeight) - parseFloat(eleScrollHeight + containerHeight)) <= 2) {
+
+
+                //如果距离为正数 则向上滑动是 禁止浏览器事件
+
+                if (distance > 0) {
+
+                    event.preventDefault();
+
+
+                }
+
+            }
+
+            else if (Math.abs(parseFloat(eleScrollHeight)) == 0) {
+
+                //如果距离为负数 则向下滑动
+
+                if (distance < 0) {
+
+                    event.preventDefault();
+
+                }
+
+
+            }
+
+
+
+        }
+
+
+    }
+
+    function clickEven() {
+
+        this.hide();
+
+    }
+
+    /*this.ban=function (e) {
+
+     window.event? window.event.cancelBubble = true : e.stopPropagation();//阻止冒泡
+
+     };*/
+
+    if(thisEle.getElementsByClassName('jf_pop_up_bg')[0]) {
+
+        if(browser.os.android){
+
+            thisEle.getElementsByClassName('jf_pop_up_bg')[0].addEventListener('touchmove',windowBanEvent.Canceling,false);
+
+
+
+        }
+        else {
+
+            addEvent(thisEle.getElementsByClassName('jf_pop_up_bg')[0]);
+        }
+
+
+
+    }
+
+    // if(thisEle.getElementsByClassName('pop_top')[0]) {
+    //
+    //     addEvent(thisEle.getElementsByClassName('pop_top')[0]);
+    //
+    // }
+
+
+    function addEvent(ele) {
+
+        var allEvent=['touchstart','touchmove','touchend'];
+
+        for(var i=0;i<allEvent.length;i++) {
+
+            ele.addEventListener(allEvent[i],eventBan,false)
+
+        }
+
+    }
+
+    function eventBan(e) {
+
+        // window.event? window.event.cancelBubble = true : e.stopPropagation();
+
+        window.event ? window.event.returnValue = false : e.preventDefault();
+
+
+    }
+
+};
+
+jfShowPop.prototype.show = function (details) {
+
+
+    if(details){
+
+        details.fn();
+
+    }
+
+
+    /* this.ban();*/
+
+    /*document.body.addEventListener('touchmove', this.ban, true);*/
+
+    var thisEle = document.getElementById(this.details.ele);
+
+
+    thisEle.style.display = 'block';
+
+    /*document.getElementsByTagName("body")[0].className = "ovfHiden";//页面禁止滚动
+
+     document.getElementsByTagName("html")[0].className = "ovfHiden";//页面禁止滚动*/
+
+    setTimeout(function () {
+
+        if (thisEle.className.indexOf('show') == -1) {
+
+            thisEle.className += ' show'
+
+        }
+
+    }, 1);
+
+    document.getElementsByClassName('jf_pop_up_bg')[0].addEventListener('touchmove',windowBanEvent.Canceling,false);//给阴影绑定冒泡事件
+
+
+};
+
+jfShowPop.prototype.hide = function () {
+
+    var thisEle = document.getElementById(this.details.ele);
+
+    /*document.body.removeEventListener('touchmove', this.ban, true);*/
+
+
+    if (thisEle.className.indexOf('show') > -1) {
+
+
+        transitionMove(thisEle);
+
+        thisEle.className = thisEle.className.replace(' show', '')
+
+    }
+
+    windowBanEvent.unbundling();//解绑页面禁止事件
+
+    /*document.getElementsByTagName("body")[0].className = "";//页面禁止滚动
+
+     document.getElementsByTagName("html")[0].className = "";//页面禁止滚动*/
+
+
+
+    function transitionMove(ele) {
+
+        // Safari 3.1 到 6.0 代码
+        ele.addEventListener("webkitTransitionEnd", MFunction);
+        // 标准语法
+        ele.addEventListener("transitionend", MFunction);
+
+        function MFunction() {
+
+            ele.style.display = 'none';
+            // Safari 3.1 到 6.0 代码
+            ele.removeEventListener("webkitTransitionEnd", MFunction);
+            // 标准语法
+            ele.removeEventListener("transitionend", MFunction);
+
+
+        }
+
+
+    }
+
 
 };
