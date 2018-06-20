@@ -314,3 +314,35 @@
 .show_buy_agreement {
   display: block
 }
+
+.show_img_left {
+  width: 46%;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 14px;
+  margin: 0 2%;
+  position: relative;
+
+  &:after {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 180%;
+    right: 0;
+    top: -40%;
+    border-right: 1px #FFFFFF solid;
+    transform: scaleX(0.5);
+  }
+
+  span {
+    font-size: 34px;
+  }
+
+}
+
+.show_img_right {
+  width: 46%;
+  font-size: 16px;
+  color: #FFFFFF;
+  margin: 0 2%;
+}

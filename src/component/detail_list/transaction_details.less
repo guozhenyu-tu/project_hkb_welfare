@@ -1,0 +1,101 @@
+.transaction_details_plate {
+  padding: 10px 15px;
+  background-color: #ffffff;
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    width: 90%;
+    height: 1px;
+    bottom: 0;
+    left: 5%;
+    border-bottom: 1px #eeeeee solid;
+    transform: scaleY(0.5);
+  }
+
+  p {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &:first-child {
+      span {
+        &:first-child {
+          font-size: 18px;
+          color: #4A4A4A;
+        }
+
+        &:last-child {
+          font-size: 16px;
+          color: #ff8000;
+        }
+      }
+    }
+
+
+
+
+    &:nth-child(2) {
+      padding: 5px 0;
+      span {
+        &:first-child {
+          font-size: 14px;
+          color: #8a8a8a;
+        }
+
+        &:last-child {
+          font-size: 16px;
+          color: #4A4A4A;
+        }
+      }
+    }
+
+
+
+
+    &:last-child {
+      span {
+        &:first-child {
+          color: #8a8a8a;
+          font-size: 14px;
+        }
+
+        &:last-child {
+          font-size: 18px;
+        }
+      }
+    }
+
+  }
+
+}
+
+.orange_font {
+  color: #f18a48;
+}
+
+.orange_deep_font {
+  color: #e83811;
+}
+
+.blue_font {
+  color: #20aee5;
+}
+
+.transaction_details_box {
+  position: fixed;
+  bottom: 0;
+  z-index: 666;
+  padding: 20px 0;
+  width: 100%;
+  text-align: center;
+  background: linear-gradient(rgba(242, 242, 242, 0.5), rgba(242, 242, 242, 1));
+
+  a {
+    text-decoration: underline;
+    color: #ff8000;
+  }
+
+}
